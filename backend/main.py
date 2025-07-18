@@ -148,12 +148,7 @@ def clean_sql_query(text: str) -> str:
         text = match.group(1)
     return re.sub(r'\s+', ' ', text.strip())
 
-# def load_excel():
-#     xl = pd.ExcelFile(EXCEL_PATH)
-#     return {
-#         name: xl.parse(name).to_dict(orient="records")
-#         for name in xl.sheet_names  # Load all sheets
-#     }
+
 
 def load_excel():
     xl = pd.ExcelFile(EXCEL_PATH)
@@ -319,4 +314,4 @@ async def ask(request: QueryRequest):
 # -------------------------------
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=10000)
+    uvicorn.run(app, host="0.0.0.0", port=8000)
