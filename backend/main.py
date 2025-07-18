@@ -1,7 +1,9 @@
 import os
 import re
 import logging
+import traceback
 from datetime import datetime
+
 import pandas as pd
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
@@ -64,60 +66,140 @@ class QueryResponse(BaseModel):
     timestamp: str
 
 # -------------------------------
-# Environment and Config
+# Configuration
 # -------------------------------
 EXCEL_PATH = "KDB.xlsx"
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "AIzaSyCUrCxWznBHeuZUmt4HUBqUAzsAdN1bwr0")
 
-# SYSTEM_PROMPT_TEMPLATE = """
-# You are a SQLite expert. Given a natural language input question, perform the following steps:
-
-# 1. Understand the user's intent.
-# 2. Generate a syntactically correct and executable **SQLite** query.
-# 3. Use only the tables described below. Do not hallucinate or assume additional tables or columns.
-# 4. Limit results to a maximum of {top_k}, if applicable.
-
-# ## Matching Rules:
-# - All string/text comparisons must be **case-insensitive**.
-# - Use `LOWER(column_name) = LOWER('value')` or `COLLATE NOCASE`.
-
-# ## Allowed Tables:
-# {table_info}
-
-# Question: {input}
-# """
-
 SYSTEM_PROMPT_TEMPLATE = """
-You are a SQLite expert. Given a natural language input question, perform the following steps:
+You are a SQLite expert and Kabaddi domain analyst. Given a user’s natural language question, follow these steps:
 
-1. Understand the user's intent, even if the input contains typos, grammar issues, or miswritten names.
-2. Generate a syntactically correct and executable **SQLite** query.
-3. Use only the tables described below. Do not hallucinate or assume additional tables or columns.
-4. Limit results to a maximum of {top_k}, if applicable.
+---
 
-## Matching Rules:
-- All string/text comparisons must be **case-insensitive**.
-- Use `LOWER(column_name) = LOWER('value')` or `COLLATE NOCASE` to enforce case-insensitivity.
-- Handle minor typos and fuzzy name matches to infer intent.
+## Step-by-Step Instructions:
 
-## Allowed Tables:
+1. Understand the question intent, even if the input has typos, informal phrasing, or fuzzy terms.
+2. Map Kabaddi-specific terms (e.g., "left raider", "defense of 3", "middle position") to correct SQL filters.
+3. Generate a correct, executable SQLite query using only the allowed table and columns.
+4. Always LIMIT results to a maximum of {top_k}, unless the question asks for all rows.
+
+---
+
+## ⚙️ Column Schema Allowed (from Excel Sheet):
+
 {table_info}
 
+---
 
-## Output Formatting Rules:
-- Do not explain the SQL query or add extra information beyond the results.
-- Do not assume data not present in the database.
-- If an error occurs, clearly indicate the SQL issue without guessing results.
-- Format answers only based on the query output.
+## 🧠 Domain-Aware Natural Language → SQL Mappings:
 
-## SQL Query Formatting:
-- Write syntactically correct SQL queries.
-- If combining multiple SELECTs with `UNION` or `UNION ALL`, **do NOT place `LIMIT` clauses inside individual SELECT statements**.
-- Instead, apply a single `LIMIT` clause **after the entire UNION expression**
-- Avoid SQL syntax errors related to clause ordering.
+| Natural Language Term           | SQL Logic or Transformation                                                |
+|--------------------------------|-----------------------------------------------------------------------------|
+| defense of 3                   | IsSuperTackleSituation = 1                                                  |
+| less than 4 defenders          | IsSuperTackleSituation = 1                                                  |
+| super tackle chance            | IsSuperTackleSituation = 1                                                  |
+| regular defense (4+)           | IsSuperTackleSituation = 0 OR IsSuperTackleSituation IS NULL                |
+| left raider                    | RaiderName LIKE '%_LIN_%'                                                   |
+| right raider                   | RaiderName LIKE '%_RIN_%'                                                   |
+| left corner tackle             | Tackle_Skill LIKE '%LCNR%'                                                  |
+| right corner tackle            | Tackle_Skill LIKE '%RCNR%'                                                  |
+| action in middle               | "ActionOnMat (LCNR_LIN_LCV_M_RCV_RIN_RCNR)" LIKE '___1___'                 |
+| action on left corner + right cover | "ActionOnMat (LCNR_LIN_LCV_M_RCV_RIN_RCNR)" LIKE '1__0_1__'         |
+| successful raid                | RaidStatus COLLATE NOCASE IN ('Successful', '1', '2')                       |
+| unsuccessful raid              | RaidStatus COLLATE NOCASE IN ('Failed/Unsuccessful', '3')                   |
+| bonus raid                     | IsBonus = 1                                                                 |
+| do-or-die raid (DOD)           | DOD = 1                                                                     |
+| tackle success                 | TackleStatus COLLATE NOCASE = 'Successful'                                  |
+| all out inflicted              | AllOutInflictedBy IS NOT NULL                                               |
+| period 1 / first half          | Period = 1                                                                  |
+| period 2 / second half         | Period = 2                                                                  |
+| hand touch                     | Raid_Skill LIKE '%HandTouch%'                                               |
+| standing bonus                 | Raid_Skill LIKE '%StandingBonus%'                                           |
+| team A score                   | RaidEnd_TeamAScore                                                           |
+| team B score                   | RaidEnd_TeamBScore                                                           |
+| match video URL                | URL                                                                          |
+
+---
+
+## 🧬 Player Name Structure:
+
+All player names follow the format:
+→ `<PlayerFullName>_<MainPlayingPosition>_<TeamShortCode><JerseyNumber>`
+
+Examples:
+- `Aslam Inamdar_LIN_PU3` → Left raider (LIN), Team = Puneri Paltan (PU)
+- Use `_LIN_` and `_RIN_` inside names to infer Left/Right raider
+- Use team code (PU, HS, etc.) for team identification
+
+---
+
+## 🧭 PositionOnMat Binary Codes:
+
+The `"ActionOnMat (LCNR_LIN_LCV_M_RCV_RIN_RCNR)"` column is a **7-digit binary string**:
+Each digit represents a position. From left to right:
+
+| Index | Digit | Position      |
+|-------|-------|---------------|
+| 1     | 1     | LCNR (Left Corner) |
+| 2     | 2     | LIN  (Left In)     |
+| 3     | 3     | LCV  (Left Cover)  |
+| 4     | 4     | M    (Middle)      |
+| 5     | 5     | RCV  (Right Cover) |
+| 6     | 6     | RIN  (Right In)    |
+| 7     | 7     | RCNR (Right Corner)|
+
+Example:
+- `'0001000'` → Action at Middle
+- `'1010100'` → Action at LCNR + LCV + RCV
+Use SQL LIKE patterns to filter positions.
+
+---
+The last three digits in the Unique_Raid_Identifier is the raid sequence of the Match. This raid sequence shows the number of raids that has happened in the match.
+- given by srikanth my manager
+
+Automatically wrap subqueries with a WITH clause if a closing ) is followed by a SELECT, and the CTE is not declared properly.
+
+
+---
+
+## 🏏 Team Abbreviations:
+
+| Code | Team Name             |
+|------|------------------------|
+| BW   | Bengal Warriors        |
+| BB   | Bengaluru Bulls        |
+| DD   | Dabang Delhi           |
+| GG   | Gujarat Giants         |
+| HS   | Haryana Steelers       |
+| JP   | Jaipur Pink Panthers   |
+| PP   | Patna Pirates          |
+| PU   | Puneri Paltan          |
+| TN   | Tamil Thalaivas        |
+| TT   | Telugu Titans          |
+| UM   | U Mumba                |
+| UP   | U.P. Yoddhas           |
+
+---
+
+## ⚠️ Matching & SQL Rules:
+
+- Always apply **case-insensitive matching** using `COLLATE NOCASE` or `LOWER() = LOWER()`.
+- Never use columns not in the schema.
+- Do not hallucinate missing values or structure.
+- If using `UNION`, place `LIMIT` after the complete union, not in individual SELECTs.
+
+---
+
+## Output Expectations:
+
+- Only output the final SQLite query — no explanation or extra commentary.
+- If the question cannot be answered, return a SQL error with reason, do **not** guess results.
+
+---
 
 Question: {input}
 """
+
 
 ANSWER_PROMPT_TEMPLATE = """
 Given the following user question, corresponding SQL query, and SQL result, respond by formatting the SQL result into a clear, structured table format based on the intent of the question.
@@ -133,24 +215,22 @@ SQL Result: {result}
 Answer:
 """
 
-
 # -------------------------------
 # Utilities
 # -------------------------------
 def clean_sql_query(text: str) -> str:
-    block_pattern = r"```(?:sql|SQL|SQLQuery|mysql|postgresql)?\s*(.*?)\s*```"
+    block_pattern = r"```(?:sql|SQL)?\s*(.*?)\s*```"
     text = re.sub(block_pattern, r"\1", text, flags=re.DOTALL)
-    prefix_pattern = r"^(?:SQL\s*Query|SQLQuery|MySQL|PostgreSQL|SQL)\s*:\s*"
-    text = re.sub(prefix_pattern, "", text, flags=re.IGNORECASE)
+    text = re.sub(r"^(SQLQuery:|SQL:)?", "", text, flags=re.IGNORECASE)
     sql_statement_pattern = r"(SELECT.*?;)"
     match = re.search(sql_statement_pattern, text, flags=re.IGNORECASE | re.DOTALL)
     if match:
-        text = match.group(1)
-    return re.sub(r'\s+', ' ', text.strip())
-
-
+        return re.sub(r'\s+', ' ', match.group(1).strip())
+    return text.strip()
 
 def load_excel():
+    if not os.path.exists(EXCEL_PATH):
+        raise FileNotFoundError(f"Excel file not found at path: {EXCEL_PATH}")
     xl = pd.ExcelFile(EXCEL_PATH)
     return {
         name: xl.parse(name).to_dict(orient="records")
@@ -164,7 +244,7 @@ def load_into_sqlite(tables):
     return engine
 
 # -------------------------------
-# LangChain Setup
+# LangChain System
 # -------------------------------
 class KabaddiSystem:
     def __init__(self):
@@ -195,10 +275,8 @@ class KabaddiSystem:
 
     def answer(self, question: str) -> dict:
         logger.info(f"Received question: {question}")
-        logger.info(f"table_info: {self.table_info}...!")
         prompt_str = SYSTEM_PROMPT_TEMPLATE.format(input=question, table_info=self.table_info, top_k="5")
         input_tokens = len(self.encoder.encode(prompt_str))
-        logger.info(f"input_tokens: {input_tokens}...!")
 
         try:
             chain = (
@@ -222,18 +300,10 @@ class KabaddiSystem:
             )
 
             response = chain.invoke({"question": question, "messages": []})
-            logger.info(f"Generated SQL query: {response['query']}")
             output_tokens = len(self.encoder.encode(response["answer"]))
-            logger.info(f"output_tokens: {output_tokens}...!")
-
             total_tokens = input_tokens + output_tokens
-            logger.info(f"total_tokens: {total_tokens}...!")
 
-            logger.info(f"Final answer: {response['answer']}")
-
-            # Extract URLs from the answer string
-            url_pattern = r"https?://[^\s|]+"
-            urls = re.findall(url_pattern, response["answer"])
+            urls = re.findall(r"https?://[^\s|]+", response["answer"])
             url_dicts = [{"url": u} for u in urls]
 
             return {
@@ -248,7 +318,7 @@ class KabaddiSystem:
             }
 
         except Exception as e:
-            logger.error(f"Error in answer method: {e}")
+            logger.error(f"Error in answer method: {traceback.format_exc()}")
             return {
                 "status": "error",
                 "data": QueryData(
@@ -260,13 +330,15 @@ class KabaddiSystem:
             }
 
 # -------------------------------
-# Initialize System
+# System Initialization
 # -------------------------------
 try:
+    logger.info("Initializing KabaddiSystem...")
     system = KabaddiSystem()
     logger.info("Kabaddi FastAPI initialized successfully.")
 except Exception as e:
     logger.error(f"System init failed: {e}")
+    logger.error(traceback.format_exc())
     system = None
 
 # -------------------------------
@@ -300,17 +372,14 @@ async def ask(request: QueryRequest):
         raise HTTPException(status_code=400, detail="Question is empty")
 
     try:
-        logger.info(f"/ask endpoint received question: {request.question}")
         result = system.answer(request.question)
-        logger.info(f"/ask endpoint returning result: {result}")
         return result
-
     except Exception as e:
         logger.error(f"Query failed in /ask endpoint: {e}", exc_info=True)
         raise HTTPException(status_code=500, detail="Query failed. Please try again.")
 
 # -------------------------------
-# Run with: uvicorn kabaddi_api:app --reload
+# Run via: uvicorn kabaddi_api:app --reload
 # -------------------------------
 if __name__ == "__main__":
     import uvicorn
