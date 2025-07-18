@@ -1,0 +1,1442 @@
+2025-06-19 18:06:49,712 INFO:[EMBEDDING CHECK] Existing documents in collection: 0
+2025-06-19 18:06:49,714 INFO:[CHUNK CREATION] Processing 339 tables: ['academy', 'academy_profile', 'academyfacility', 'academyproductopbal', 'academyresource', 'activity', 'activitylog', 'address', 'agaram_competition_code', 'all_fee_matrix', 'all_fee_matrix_bkupapr6', 'allfeematrix_bkup_on_aug162023', 'aprregularalloc', 'asset utiliz', 'asset utilization-till-sep23-annual meeting22', 'asset_utilization_oct_2023', 'attendance', 'auction_game_purse', 'auctiongame', 'balfac', 'batch', 'batchstudent', 'battingposition', 'booking', 'bookingmaster', 'bookingparticipant', 'bookingresource', 'bulk_sms', 'bulk_sms_218', 'callback', 'city', 'coach', 'coachbatchallocation', 'coachfeedback', 'course', 'course_type', 'coursetype', 'cricketrole', 'cricketstyle', 'csk_sales_analysis', 'deldupinvoice', 'discount', 'dropout', 'duemonthrestriction', 'dupmar', 'event', 'event_master', 'event_payment_mapping', 'event_registration', 'eventpayments', 'facility', 'facilitybooking', 'facilitybookingfromexcel', 'facilityresource', 'facilityresourseblocking', 'facilityslotblocking', 'feedback', 'feesmatrix', 'file_upload_test', 'files', 'for_references', 'gg2', 'hibernate_sequence', 'image_table', 'jerseysales', 'key_value', 'kitsales', 'kitspurchaseinward', 'leaveday', 'leaverequest', 'leavetype', 'live_auction_slno', 'livestreaming', 'lkk', 'll', 'lll', 'm_academy_details', 'm_achievements', 'm_activity', 'm_album', 'm_alltime_11', 'm_appmenu', 'm_aqilliz_users', 'm_auction_game_players', 'm_auction_players', 'm_auction_team', 'm_auctionplayers', 'm_author', 'm_banner', 'm_battingstats', 'm_blog', 'm_booking', 'm_bowlingstats', 'm_contest', 'm_contest_downloads', 'm_contest_playbuzz', 'm_contest_questions', 'm_contest_type', 'm_country_master', 'm_cricket_details', 'm_csk_notifications', 'm_csk_referral', 'm_csk_roar', 'm_csk_team', 'm_csk_team_detail', 'm_csktv_category', 'm_csktv_video', 'm_fan_app_content_dtl', 'm_fan_upload_image', 'm_fan_upload_video', 'm_fanplayers', 'm_fanquestions', 'm_fantemplatequestions', 'm_food_products', 'm_gallery', 'm_gallery_year', 'm_gamify_rewards_and_redeems', 'm_gamify_treasurant', 'm_home_feeds', 'm_instituition_details', 'm_institution_type', 'm_ipl_auctions', 'm_json_redirect', 'm_lions_reward', 'm_listquestion', 'm_mainmenu_role_mapping', 'm_match_fixture', 'm_match_schedule', 'm_match_url', 'm_menu', 'm_menu_bk', 'm_news', 'm_news_fanzone', 'm_news_images', 'm_news_provider', 'm_news_provider_fanzone', 'm_notification_type', 'm_notify_products', 'm_online_partner', 'm_other_blogs', 'm_other_users', 'm_pages', 'm_parameters', 'm_payment_promotions', 'm_persona', 'm_personal_details', 'm_player_statistics', 'm_players', 'm_players_profile', 'm_players_ratecard', 'm_poiltusers', 'm_prize', 'm_program', 'm_rdm_cart', 'm_rdm_order', 'm_rdm_order_details', 'm_rdm_order_history', 'm_rdm_product', 'm_rdm_product_images', 'm_rdm_product_stock_entry', 'm_rdm_product_variants', 'm_remind_products', 'm_restaurants', 'm_role_permissions', 'm_roles', 'm_route', 'm_season', 'm_season_team_players', 'm_short_news', 'm_social', 'm_social_provider', 'm_sponsors', 'm_streaming_recommended_video', 'm_streaming_video', 'm_student_payment_status', 'm_sub_menu', 'm_submenu_role_mapping', 'm_superart', 'm_tags', 'm_team', 'm_team_highlights', 'm_team_updates', 'm_templates', 'm_testauthor', 'm_tickets', 'm_tier', 'm_tweet_images', 'm_tweets', 'm_twitter_feeds', 'm_user', 'm_user_address', 'm_user_admin', 'm_user_migrated', 'm_user_persona_mapping', 'm_user_personal_mapping', 'm_user_preferences', 'm_user_profile', 'm_user_profile_migrated', 'm_user_restaurant', 'm_user_roles', 'm_user_type', 'm_video', 'm_webcard', 'm_whistle_count', 'm_year', 'm_yellove_wall', 'magentouser', 'mailids', 'manual-fee-invoices', 'manual-invoice-gst', 'manual_invoice_matrix_bkup_on_oct13', 'manual_invoices_matrix', 'manual_invoices_matrix339', 'manual_invoices_tillapr26', 'matchlog', 'newsdigest', 'notification', 'onlyweb', 'participant', 'payment_transaction', 'payment_transactions', 'paymentlog', 'payslips', 'permissionmapping', 'persons', 'pls_chk_invalid_invoice', 'pls_chk_invalid_payment', 'pricing', 'product', 'regional', 'regularfeesmatrix', 'regularfeesmatrix2', 'regularfeesmatrixapr23', 'regularfeesmatrixapr23_addl', 'regularfeesmatrixapr23_frmmarch23', 'regularfeesmatrixapr24', 'regularfeesmatrixapr25', 'regularfeesmatrixaug23', 'regularfeesmatrixaug24', 'regularfeesmatrixaug24onoct24', 'regularfeesmatrixaug24today', 'regularfeesmatrixdec', 'regularfeesmatrixdec23', 'regularfeesmatrixdec24', 'regularfeesmatrixfeb', 'regularfeesmatrixfeb24', 'regularfeesmatrixfeb25', 'regularfeesmatrixjan', 'regularfeesmatrixjan24', 'regularfeesmatrixjan25', 'regularfeesmatrixjul23', 'regularfeesmatrixjul24', 'regularfeesmatrixjun23', 'regularfeesmatrixjun23onlyfee', 'regularfeesmatrixjun24', 'regularfeesmatrixmar23', 'regularfeesmatrixmar24', 'regularfeesmatrixmar25', 'regularfeesmatrixmay23', 'regularfeesmatrixmay24', 'regularfeesmatrixnew', 'regularfeesmatrixnov', 'regularfeesmatrixnov23', 'regularfeesmatrixnov24', 'regularfeesmatrixoct23', 'regularfeesmatrixoct23corr', 'regularfeesmatrixoct24', 'regularfeesmatrixsep23', 'regularfeesmatrixsep24', 'resource', 'resourceslot', 'resourceslotmatrix', 'role', 'session_users', 'sessionbooking', 'sessionbookingstudents', 'siblingapr', 'slot', 'sms_history', 'squadselection', 'squard_batch_details', 'squard_details', 'squard_facility', 'squard_player_details', 'squard_transition', 'stu', 'student', 'studentcoursemapping', 'studentphysicalassessment', 'studentvideo', 'subresource', 't_advertisements', 't_advertisements_back', 't_alltimexi', 't_aqillis_mail_transaction', 't_aqillis_transaction', 't_auctionselectedplayers', 't_blog_comments', 't_common_error', 't_contest_answers', 't_contest_prizes', 't_contest_selfie', 't_contest_user_answers', 't_contest_winners', 't_customizable_orders', 't_fan_super_squad', 't_fantemplateans', 't_home_json', 't_ipl_players_bid_details', 't_ipl_players_final_bid', 't_match_user_notification', 't_payment_gateway_trans', 't_payment_invoice', 't_super_retention', 't_superfan', 't_tssscheduler', 't_user_activities', 't_user_contest', 't_user_home_feed_pref', 't_user_logins_log', 't_user_predicted_team_list', 't_users_eligible_notifications', 't_yellovemoments', 'temp', 'temp_matrix', 'terms_and_conditon', 'tmp_matrix2', 'tmp_ph_no', 'tmp_users', 'tt2', 'tt3', 'tt4', 'user', 'user_notification_preferences', 'vendorrequest', 'workingtab', 'xl_mapping', 'xl_upload', 'zerofeesstudents']
+2025-06-19 18:06:49,715 INFO:[CHUNK CREATION] Processing table: academy
+2025-06-19 18:06:49,729 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `academy` LIMIT 3
+2025-06-19 18:06:49,731 INFO:[SAMPLE ROWS] Table `academy`: Retrieved string result
+2025-06-19 18:06:49,734 INFO:[SAMPLE TABLE] academy - Schema length: 1720
+2025-06-19 18:06:49,734 INFO:[SAMPLE TABLE] academy - Sample data length: 1037
+2025-06-19 18:06:49,736 INFO:[SAMPLE TABLE] academy - Final chunk length: 2798
+2025-06-19 18:06:49,736 INFO:[CHUNK CREATION] Table `academy`: Created 1 table chunk + 25 column chunks
+2025-06-19 18:06:49,736 INFO:[CHUNK CREATION] Processing table: academy_profile
+2025-06-19 18:06:49,750 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `academy_profile` LIMIT 3
+2025-06-19 18:06:49,752 INFO:[SAMPLE ROWS] Table `academy_profile`: Retrieved string result
+2025-06-19 18:06:49,752 INFO:[CHUNK CREATION] Table `academy_profile`: Created 1 table chunk + 24 column chunks
+2025-06-19 18:06:49,752 INFO:[CHUNK CREATION] Processing table: academyfacility
+2025-06-19 18:06:49,766 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `academyfacility` LIMIT 3
+2025-06-19 18:06:49,768 INFO:[SAMPLE ROWS] Table `academyfacility`: Retrieved string result
+2025-06-19 18:06:49,768 INFO:[CHUNK CREATION] Table `academyfacility`: Created 1 table chunk + 10 column chunks
+2025-06-19 18:06:49,768 INFO:[CHUNK CREATION] Processing table: academyproductopbal
+2025-06-19 18:06:49,779 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `academyproductopbal` LIMIT 3
+2025-06-19 18:06:49,781 INFO:[SAMPLE ROWS] Table `academyproductopbal`: Retrieved string result
+2025-06-19 18:06:49,781 INFO:[CHUNK CREATION] Table `academyproductopbal`: Created 1 table chunk + 15 column chunks
+2025-06-19 18:06:49,781 INFO:[CHUNK CREATION] Processing table: academyresource
+2025-06-19 18:06:49,790 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `academyresource` LIMIT 3
+2025-06-19 18:06:49,792 INFO:[SAMPLE ROWS] Table `academyresource`: Retrieved string result
+2025-06-19 18:06:49,792 INFO:[CHUNK CREATION] Table `academyresource`: Created 1 table chunk + 16 column chunks
+2025-06-19 18:06:49,792 INFO:[CHUNK CREATION] Processing table: activity
+2025-06-19 18:06:49,801 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `activity` LIMIT 3
+2025-06-19 18:06:49,803 INFO:[SAMPLE ROWS] Table `activity`: Retrieved string result
+2025-06-19 18:06:49,803 INFO:[CHUNK CREATION] Table `activity`: Created 1 table chunk + 14 column chunks
+2025-06-19 18:06:49,803 INFO:[CHUNK CREATION] Processing table: activitylog
+2025-06-19 18:06:49,813 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `activitylog` LIMIT 3
+2025-06-19 18:06:49,816 INFO:[SAMPLE ROWS] Table `activitylog`: Retrieved string result
+2025-06-19 18:06:49,816 INFO:[CHUNK CREATION] Table `activitylog`: Created 1 table chunk + 17 column chunks
+2025-06-19 18:06:49,816 INFO:[CHUNK CREATION] Processing table: address
+2025-06-19 18:06:49,826 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `address` LIMIT 3
+2025-06-19 18:06:49,828 INFO:[SAMPLE ROWS] Table `address`: Retrieved string result
+2025-06-19 18:06:49,828 INFO:[CHUNK CREATION] Table `address`: Created 1 table chunk + 19 column chunks
+2025-06-19 18:06:49,828 INFO:[CHUNK CREATION] Processing table: agaram_competition_code
+2025-06-19 18:06:49,835 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `agaram_competition_code` LIMIT 3
+2025-06-19 18:06:49,836 INFO:[SAMPLE ROWS] Table `agaram_competition_code`: Retrieved string result
+2025-06-19 18:06:49,836 INFO:[CHUNK CREATION] Table `agaram_competition_code`: Created 1 table chunk + 11 column chunks
+2025-06-19 18:06:49,836 INFO:[CHUNK CREATION] Processing table: all_fee_matrix
+2025-06-19 18:06:49,848 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `all_fee_matrix` LIMIT 3
+2025-06-19 18:06:49,849 INFO:[SAMPLE ROWS] Table `all_fee_matrix`: Retrieved string result
+2025-06-19 18:06:49,849 INFO:[CHUNK CREATION] Table `all_fee_matrix`: Created 1 table chunk + 28 column chunks
+2025-06-19 18:06:49,849 INFO:[CHUNK CREATION] Processing table: all_fee_matrix_bkupapr6
+2025-06-19 18:06:49,861 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `all_fee_matrix_bkupapr6` LIMIT 3
+2025-06-19 18:06:49,864 INFO:[SAMPLE ROWS] Table `all_fee_matrix_bkupapr6`: Retrieved string result
+2025-06-19 18:06:49,864 INFO:[CHUNK CREATION] Table `all_fee_matrix_bkupapr6`: Created 1 table chunk + 28 column chunks
+2025-06-19 18:06:49,865 INFO:[CHUNK CREATION] Processing table: allfeematrix_bkup_on_aug162023
+2025-06-19 18:06:49,877 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `allfeematrix_bkup_on_aug162023` LIMIT 3
+2025-06-19 18:06:49,881 INFO:[SAMPLE ROWS] Table `allfeematrix_bkup_on_aug162023`: Retrieved string result
+2025-06-19 18:06:49,881 INFO:[CHUNK CREATION] Table `allfeematrix_bkup_on_aug162023`: Created 1 table chunk + 28 column chunks
+2025-06-19 18:06:49,882 INFO:[CHUNK CREATION] Processing table: aprregularalloc
+2025-06-19 18:06:49,894 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `aprregularalloc` LIMIT 3
+2025-06-19 18:06:49,897 INFO:[SAMPLE ROWS] Table `aprregularalloc`: Retrieved string result
+2025-06-19 18:06:49,897 INFO:[CHUNK CREATION] Table `aprregularalloc`: Created 1 table chunk + 28 column chunks
+2025-06-19 18:06:49,898 INFO:[CHUNK CREATION] Processing table: asset utiliz
+2025-06-19 18:06:49,908 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `asset utiliz` LIMIT 3
+2025-06-19 18:06:49,911 INFO:[SAMPLE ROWS] Table `asset utiliz`: Retrieved string result
+2025-06-19 18:06:49,911 INFO:[CHUNK CREATION] Table `asset utiliz`: Created 1 table chunk + 16 column chunks
+2025-06-19 18:06:49,911 INFO:[CHUNK CREATION] Processing table: asset utilization-till-sep23-annual meeting22
+2025-06-19 18:06:49,923 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `asset utilization-till-sep23-annual meeting22` LIMIT 3
+2025-06-19 18:06:49,926 INFO:[SAMPLE ROWS] Table `asset utilization-till-sep23-annual meeting22`: Retrieved string result
+2025-06-19 18:06:49,926 INFO:[CHUNK CREATION] Table `asset utilization-till-sep23-annual meeting22`: Created 1 table chunk + 23 column chunks
+2025-06-19 18:06:49,928 INFO:[CHUNK CREATION] Processing table: asset_utilization_oct_2023
+2025-06-19 18:06:49,940 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `asset_utilization_oct_2023` LIMIT 3
+2025-06-19 18:06:49,944 INFO:[SAMPLE ROWS] Table `asset_utilization_oct_2023`: Retrieved string result
+2025-06-19 18:06:49,944 INFO:[CHUNK CREATION] Table `asset_utilization_oct_2023`: Created 1 table chunk + 35 column chunks
+2025-06-19 18:06:49,945 INFO:[CHUNK CREATION] Processing table: attendance
+2025-06-19 18:06:49,949 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `attendance` LIMIT 3
+2025-06-19 18:06:49,957 INFO:[SAMPLE ROWS] Table `attendance`: Retrieved string result
+2025-06-19 18:06:49,957 INFO:[CHUNK CREATION] Table `attendance`: Created 1 table chunk + 25 column chunks
+2025-06-19 18:06:49,957 INFO:[CHUNK CREATION] Processing table: auction_game_purse
+2025-06-19 18:06:49,964 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `auction_game_purse` LIMIT 3
+2025-06-19 18:06:49,965 INFO:[SAMPLE ROWS] Table `auction_game_purse`: Retrieved string result
+2025-06-19 18:06:49,965 INFO:[CHUNK CREATION] Table `auction_game_purse`: Created 1 table chunk + 5 column chunks
+2025-06-19 18:06:49,965 INFO:[CHUNK CREATION] Processing table: auctiongame
+2025-06-19 18:06:49,972 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `auctiongame` LIMIT 3
+2025-06-19 18:06:49,974 INFO:[SAMPLE ROWS] Table `auctiongame`: Retrieved string result
+2025-06-19 18:06:49,975 INFO:[CHUNK CREATION] Table `auctiongame`: Created 1 table chunk + 15 column chunks
+2025-06-19 18:06:49,975 INFO:[CHUNK CREATION] Processing table: balfac
+2025-06-19 18:06:49,977 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `balfac` LIMIT 3
+2025-06-19 18:06:49,977 INFO:[SAMPLE ROWS] Table `balfac`: Retrieved string result
+2025-06-19 18:06:49,977 INFO:[CHUNK CREATION] Table `balfac`: Created 1 table chunk + 20 column chunks
+2025-06-19 18:06:49,977 INFO:[CHUNK CREATION] Processing table: batch
+2025-06-19 18:06:49,994 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `batch` LIMIT 3
+2025-06-19 18:06:49,994 INFO:[SAMPLE ROWS] Table `batch`: Retrieved string result
+2025-06-19 18:06:49,994 INFO:[CHUNK CREATION] Table `batch`: Created 1 table chunk + 17 column chunks
+2025-06-19 18:06:49,994 INFO:[CHUNK CREATION] Processing table: batchstudent
+2025-06-19 18:06:50,003 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `batchstudent` LIMIT 3
+2025-06-19 18:06:50,005 INFO:[SAMPLE ROWS] Table `batchstudent`: Retrieved string result
+2025-06-19 18:06:50,007 INFO:[CHUNK CREATION] Table `batchstudent`: Created 1 table chunk + 15 column chunks
+2025-06-19 18:06:50,007 INFO:[CHUNK CREATION] Processing table: battingposition
+2025-06-19 18:06:50,012 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `battingposition` LIMIT 3
+2025-06-19 18:06:50,012 INFO:[SAMPLE ROWS] Table `battingposition`: Retrieved string result
+2025-06-19 18:06:50,012 INFO:[CHUNK CREATION] Table `battingposition`: Created 1 table chunk + 13 column chunks
+2025-06-19 18:06:50,012 INFO:[CHUNK CREATION] Processing table: booking
+2025-06-19 18:06:50,028 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `booking` LIMIT 3
+2025-06-19 18:06:50,028 INFO:[SAMPLE ROWS] Table `booking`: Retrieved string result
+2025-06-19 18:06:50,028 INFO:[CHUNK CREATION] Table `booking`: Created 1 table chunk + 32 column chunks
+2025-06-19 18:06:50,028 INFO:[CHUNK CREATION] Processing table: bookingmaster
+2025-06-19 18:06:50,041 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `bookingmaster` LIMIT 3
+2025-06-19 18:06:50,043 INFO:[SAMPLE ROWS] Table `bookingmaster`: Retrieved string result
+2025-06-19 18:06:50,043 INFO:[CHUNK CREATION] Table `bookingmaster`: Created 1 table chunk + 14 column chunks
+2025-06-19 18:06:50,043 INFO:[CHUNK CREATION] Processing table: bookingparticipant
+2025-06-19 18:06:50,051 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `bookingparticipant` LIMIT 3
+2025-06-19 18:06:50,051 INFO:[SAMPLE ROWS] Table `bookingparticipant`: Retrieved string result
+2025-06-19 18:06:50,051 INFO:[CHUNK CREATION] Table `bookingparticipant`: Created 1 table chunk + 15 column chunks
+2025-06-19 18:06:50,051 INFO:[CHUNK CREATION] Processing table: bookingresource
+2025-06-19 18:06:50,061 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `bookingresource` LIMIT 3
+2025-06-19 18:06:50,061 INFO:[SAMPLE ROWS] Table `bookingresource`: Retrieved string result
+2025-06-19 18:06:50,061 INFO:[CHUNK CREATION] Table `bookingresource`: Created 1 table chunk + 16 column chunks
+2025-06-19 18:06:50,061 INFO:[CHUNK CREATION] Processing table: bulk_sms
+2025-06-19 18:06:50,073 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `bulk_sms` LIMIT 3
+2025-06-19 18:06:50,076 INFO:[SAMPLE ROWS] Table `bulk_sms`: Retrieved string result
+2025-06-19 18:06:50,076 INFO:[CHUNK CREATION] Table `bulk_sms`: Created 1 table chunk + 12 column chunks
+2025-06-19 18:06:50,076 INFO:[CHUNK CREATION] Processing table: bulk_sms_218
+2025-06-19 18:06:50,084 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `bulk_sms_218` LIMIT 3
+2025-06-19 18:06:50,086 INFO:[SAMPLE ROWS] Table `bulk_sms_218`: Retrieved string result
+2025-06-19 18:06:50,086 INFO:[CHUNK CREATION] Table `bulk_sms_218`: Created 1 table chunk + 12 column chunks
+2025-06-19 18:06:50,086 INFO:[CHUNK CREATION] Processing table: callback
+2025-06-19 18:06:50,094 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `callback` LIMIT 3
+2025-06-19 18:06:50,096 INFO:[SAMPLE ROWS] Table `callback`: Retrieved string result
+2025-06-19 18:06:50,097 INFO:[CHUNK CREATION] Table `callback`: Created 1 table chunk + 10 column chunks
+2025-06-19 18:06:50,097 INFO:[CHUNK CREATION] Processing table: city
+2025-06-19 18:06:50,106 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `city` LIMIT 3
+2025-06-19 18:06:50,108 INFO:[SAMPLE ROWS] Table `city`: Retrieved string result
+2025-06-19 18:06:50,108 INFO:[CHUNK CREATION] Table `city`: Created 1 table chunk + 12 column chunks
+2025-06-19 18:06:50,108 INFO:[CHUNK CREATION] Processing table: coach
+2025-06-19 18:06:50,118 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `coach` LIMIT 3
+2025-06-19 18:06:50,121 INFO:[SAMPLE ROWS] Table `coach`: Retrieved string result
+2025-06-19 18:06:50,121 INFO:[CHUNK CREATION] Table `coach`: Created 1 table chunk + 17 column chunks
+2025-06-19 18:06:50,121 INFO:[CHUNK CREATION] Processing table: coachbatchallocation
+2025-06-19 18:06:50,130 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `coachbatchallocation` LIMIT 3
+2025-06-19 18:06:50,132 INFO:[SAMPLE ROWS] Table `coachbatchallocation`: Retrieved string result
+2025-06-19 18:06:50,132 INFO:[CHUNK CREATION] Table `coachbatchallocation`: Created 1 table chunk + 11 column chunks
+2025-06-19 18:06:50,132 INFO:[CHUNK CREATION] Processing table: coachfeedback
+2025-06-19 18:06:50,143 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `coachfeedback` LIMIT 3
+2025-06-19 18:06:50,143 INFO:[SAMPLE ROWS] Table `coachfeedback`: Retrieved string result
+2025-06-19 18:06:50,143 INFO:[CHUNK CREATION] Table `coachfeedback`: Created 1 table chunk + 17 column chunks
+2025-06-19 18:06:50,143 INFO:[CHUNK CREATION] Processing table: course
+2025-06-19 18:06:50,160 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `course` LIMIT 3
+2025-06-19 18:06:50,161 INFO:[SAMPLE ROWS] Table `course`: Retrieved string result
+2025-06-19 18:06:50,161 INFO:[CHUNK CREATION] Table `course`: Created 1 table chunk + 32 column chunks
+2025-06-19 18:06:50,161 INFO:[CHUNK CREATION] Processing table: course_type
+2025-06-19 18:06:50,172 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `course_type` LIMIT 3
+2025-06-19 18:06:50,174 INFO:[SAMPLE ROWS] Table `course_type`: Retrieved string result
+2025-06-19 18:06:50,174 INFO:[CHUNK CREATION] Table `course_type`: Created 1 table chunk + 13 column chunks
+2025-06-19 18:06:50,174 INFO:[CHUNK CREATION] Processing table: coursetype
+2025-06-19 18:06:50,183 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `coursetype` LIMIT 3
+2025-06-19 18:06:50,183 INFO:[SAMPLE ROWS] Table `coursetype`: Retrieved string result
+2025-06-19 18:06:50,183 INFO:[CHUNK CREATION] Table `coursetype`: Created 1 table chunk + 13 column chunks
+2025-06-19 18:06:50,183 INFO:[CHUNK CREATION] Processing table: cricketrole
+2025-06-19 18:06:50,193 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `cricketrole` LIMIT 3
+2025-06-19 18:06:50,197 INFO:[SAMPLE ROWS] Table `cricketrole`: Retrieved string result
+2025-06-19 18:06:50,197 INFO:[CHUNK CREATION] Table `cricketrole`: Created 1 table chunk + 13 column chunks
+2025-06-19 18:06:50,197 INFO:[CHUNK CREATION] Processing table: cricketstyle
+2025-06-19 18:06:50,206 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `cricketstyle` LIMIT 3
+2025-06-19 18:06:50,208 INFO:[SAMPLE ROWS] Table `cricketstyle`: Retrieved string result
+2025-06-19 18:06:50,208 INFO:[CHUNK CREATION] Table `cricketstyle`: Created 1 table chunk + 15 column chunks
+2025-06-19 18:06:50,208 INFO:[CHUNK CREATION] Processing table: csk_sales_analysis
+2025-06-19 18:06:50,220 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `csk_sales_analysis` LIMIT 3
+2025-06-19 18:06:50,224 INFO:[SAMPLE ROWS] Table `csk_sales_analysis`: Retrieved string result
+2025-06-19 18:06:50,224 INFO:[CHUNK CREATION] Table `csk_sales_analysis`: Created 1 table chunk + 39 column chunks
+2025-06-19 18:06:50,225 INFO:[CHUNK CREATION] Processing table: deldupinvoice
+2025-06-19 18:06:50,227 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `deldupinvoice` LIMIT 3
+2025-06-19 18:06:50,242 INFO:[SAMPLE ROWS] Table `deldupinvoice`: Retrieved string result
+2025-06-19 18:06:50,242 INFO:[CHUNK CREATION] Table `deldupinvoice`: Created 1 table chunk + 53 column chunks
+2025-06-19 18:06:50,243 INFO:[CHUNK CREATION] Processing table: discount
+2025-06-19 18:06:50,248 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `discount` LIMIT 3
+2025-06-19 18:06:50,248 INFO:[SAMPLE ROWS] Table `discount`: Retrieved string result
+2025-06-19 18:06:50,248 INFO:[CHUNK CREATION] Table `discount`: Created 1 table chunk + 17 column chunks
+2025-06-19 18:06:50,248 INFO:[CHUNK CREATION] Processing table: dropout
+2025-06-19 18:06:50,262 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `dropout` LIMIT 3
+2025-06-19 18:06:50,262 INFO:[SAMPLE ROWS] Table `dropout`: Retrieved string result
+2025-06-19 18:06:50,262 INFO:[CHUNK CREATION] Table `dropout`: Created 1 table chunk + 16 column chunks
+2025-06-19 18:06:50,262 INFO:[CHUNK CREATION] Processing table: duemonthrestriction
+2025-06-19 18:06:50,276 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `duemonthrestriction` LIMIT 3
+2025-06-19 18:06:50,279 INFO:[SAMPLE ROWS] Table `duemonthrestriction`: Retrieved string result
+2025-06-19 18:06:50,279 INFO:[CHUNK CREATION] Table `duemonthrestriction`: Created 1 table chunk + 16 column chunks
+2025-06-19 18:06:50,279 INFO:[CHUNK CREATION] Processing table: dupmar
+2025-06-19 18:06:50,291 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `dupmar` LIMIT 3
+2025-06-19 18:06:50,292 INFO:[SAMPLE ROWS] Table `dupmar`: Retrieved string result
+2025-06-19 18:06:50,292 INFO:[CHUNK CREATION] Table `dupmar`: Created 1 table chunk + 28 column chunks
+2025-06-19 18:06:50,292 INFO:[CHUNK CREATION] Processing table: event
+2025-06-19 18:06:50,306 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `event` LIMIT 3
+2025-06-19 18:06:50,309 INFO:[SAMPLE ROWS] Table `event`: Retrieved string result
+2025-06-19 18:06:50,309 INFO:[CHUNK CREATION] Table `event`: Created 1 table chunk + 18 column chunks
+2025-06-19 18:06:50,310 INFO:[CHUNK CREATION] Processing table: event_master
+2025-06-19 18:06:50,314 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `event_master` LIMIT 3
+2025-06-19 18:06:50,314 INFO:[SAMPLE ROWS] Table `event_master`: Retrieved string result
+2025-06-19 18:06:50,314 INFO:[CHUNK CREATION] Table `event_master`: Created 1 table chunk + 10 column chunks
+2025-06-19 18:06:50,314 INFO:[CHUNK CREATION] Processing table: event_payment_mapping
+2025-06-19 18:06:50,327 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `event_payment_mapping` LIMIT 3
+2025-06-19 18:06:50,327 INFO:[SAMPLE ROWS] Table `event_payment_mapping`: Retrieved string result
+2025-06-19 18:06:50,327 INFO:[CHUNK CREATION] Table `event_payment_mapping`: Created 1 table chunk + 14 column chunks
+2025-06-19 18:06:50,327 INFO:[CHUNK CREATION] Processing table: event_registration
+2025-06-19 18:06:50,336 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `event_registration` LIMIT 3
+2025-06-19 18:06:50,339 INFO:[SAMPLE ROWS] Table `event_registration`: Retrieved string result
+2025-06-19 18:06:50,339 INFO:[CHUNK CREATION] Table `event_registration`: Created 1 table chunk + 20 column chunks
+2025-06-19 18:06:50,339 INFO:[CHUNK CREATION] Processing table: eventpayments
+2025-06-19 18:06:50,343 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `eventpayments` LIMIT 3
+2025-06-19 18:06:50,343 INFO:[SAMPLE ROWS] Table `eventpayments`: Retrieved string result
+2025-06-19 18:06:50,343 INFO:[CHUNK CREATION] Table `eventpayments`: Created 1 table chunk + 11 column chunks
+2025-06-19 18:06:50,343 INFO:[CHUNK CREATION] Processing table: facility
+2025-06-19 18:06:50,355 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `facility` LIMIT 3
+2025-06-19 18:06:50,357 INFO:[SAMPLE ROWS] Table `facility`: Retrieved string result
+2025-06-19 18:06:50,358 INFO:[CHUNK CREATION] Table `facility`: Created 1 table chunk + 14 column chunks
+2025-06-19 18:06:50,358 INFO:[CHUNK CREATION] Processing table: facilitybooking
+2025-06-19 18:06:50,364 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `facilitybooking` LIMIT 3
+2025-06-19 18:06:50,366 INFO:[SAMPLE ROWS] Table `facilitybooking`: Retrieved string result
+2025-06-19 18:06:50,366 INFO:[CHUNK CREATION] Table `facilitybooking`: Created 1 table chunk + 20 column chunks
+2025-06-19 18:06:50,366 INFO:[CHUNK CREATION] Processing table: facilitybookingfromexcel
+2025-06-19 18:06:50,374 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `facilitybookingfromexcel` LIMIT 3
+2025-06-19 18:06:50,375 INFO:[SAMPLE ROWS] Table `facilitybookingfromexcel`: Retrieved string result
+2025-06-19 18:06:50,375 INFO:[CHUNK CREATION] Table `facilitybookingfromexcel`: Created 1 table chunk + 20 column chunks
+2025-06-19 18:06:50,375 INFO:[CHUNK CREATION] Processing table: facilityresource
+2025-06-19 18:06:50,375 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `facilityresource` LIMIT 3
+2025-06-19 18:06:50,375 INFO:[SAMPLE ROWS] Table `facilityresource`: Retrieved string result
+2025-06-19 18:06:50,375 INFO:[CHUNK CREATION] Table `facilityresource`: Created 1 table chunk + 10 column chunks
+2025-06-19 18:06:50,375 INFO:[CHUNK CREATION] Processing table: facilityresourseblocking
+2025-06-19 18:06:50,392 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `facilityresourseblocking` LIMIT 3
+2025-06-19 18:06:50,395 INFO:[SAMPLE ROWS] Table `facilityresourseblocking`: Retrieved string result
+2025-06-19 18:06:50,395 INFO:[CHUNK CREATION] Table `facilityresourseblocking`: Created 1 table chunk + 23 column chunks
+2025-06-19 18:06:50,395 INFO:[CHUNK CREATION] Processing table: facilityslotblocking
+2025-06-19 18:06:50,403 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `facilityslotblocking` LIMIT 3
+2025-06-19 18:06:50,405 INFO:[SAMPLE ROWS] Table `facilityslotblocking`: Retrieved string result
+2025-06-19 18:06:50,406 INFO:[CHUNK CREATION] Table `facilityslotblocking`: Created 1 table chunk + 27 column chunks
+2025-06-19 18:06:50,406 INFO:[CHUNK CREATION] Processing table: feedback
+2025-06-19 18:06:50,414 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `feedback` LIMIT 3
+2025-06-19 18:06:50,414 INFO:[SAMPLE ROWS] Table `feedback`: Retrieved string result
+2025-06-19 18:06:50,414 INFO:[CHUNK CREATION] Table `feedback`: Created 1 table chunk + 21 column chunks
+2025-06-19 18:06:50,414 INFO:[CHUNK CREATION] Processing table: feesmatrix
+2025-06-19 18:06:50,424 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `feesmatrix` LIMIT 3
+2025-06-19 18:06:50,425 INFO:[SAMPLE ROWS] Table `feesmatrix`: Retrieved string result
+2025-06-19 18:06:50,425 INFO:[CHUNK CREATION] Table `feesmatrix`: Created 1 table chunk + 28 column chunks
+2025-06-19 18:06:50,425 INFO:[CHUNK CREATION] Processing table: file_upload_test
+2025-06-19 18:06:50,434 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `file_upload_test` LIMIT 3
+2025-06-19 18:06:50,434 INFO:[SAMPLE ROWS] Table `file_upload_test`: Retrieved string result
+2025-06-19 18:06:50,434 INFO:[CHUNK CREATION] Table `file_upload_test`: Created 1 table chunk + 15 column chunks
+2025-06-19 18:06:50,434 INFO:[CHUNK CREATION] Processing table: files
+2025-06-19 18:06:50,443 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `files` LIMIT 3
+2025-06-19 18:06:50,443 INFO:[SAMPLE ROWS] Table `files`: Retrieved string result
+2025-06-19 18:06:50,443 INFO:[CHUNK CREATION] Table `files`: Created 1 table chunk + 8 column chunks
+2025-06-19 18:06:50,443 INFO:[CHUNK CREATION] Processing table: for_references
+2025-06-19 18:06:50,449 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `for_references` LIMIT 3
+2025-06-19 18:06:50,449 INFO:[SAMPLE ROWS] Table `for_references`: Retrieved string result
+2025-06-19 18:06:50,449 INFO:[CHUNK CREATION] Table `for_references`: Created 1 table chunk + 6 column chunks
+2025-06-19 18:06:50,449 INFO:[CHUNK CREATION] Processing table: gg2
+2025-06-19 18:06:50,458 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `gg2` LIMIT 3
+2025-06-19 18:06:50,458 INFO:[SAMPLE ROWS] Table `gg2`: Retrieved string result
+2025-06-19 18:06:50,458 INFO:[CHUNK CREATION] Table `gg2`: Created 1 table chunk + 22 column chunks
+2025-06-19 18:06:50,458 INFO:[CHUNK CREATION] Processing table: hibernate_sequence
+2025-06-19 18:06:50,458 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `hibernate_sequence` LIMIT 3
+2025-06-19 18:06:50,458 INFO:[SAMPLE ROWS] Table `hibernate_sequence`: Retrieved string result
+2025-06-19 18:06:50,458 INFO:[CHUNK CREATION] Table `hibernate_sequence`: Created 1 table chunk + 8 column chunks
+2025-06-19 18:06:50,458 INFO:[CHUNK CREATION] Processing table: image_table
+2025-06-19 18:06:50,475 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `image_table` LIMIT 3
+2025-06-19 18:06:50,475 INFO:[SAMPLE ROWS] Table `image_table`: Retrieved string result
+2025-06-19 18:06:50,475 INFO:[CHUNK CREATION] Table `image_table`: Created 1 table chunk + 8 column chunks
+2025-06-19 18:06:50,475 INFO:[CHUNK CREATION] Processing table: jerseysales
+2025-06-19 18:06:50,484 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `jerseysales` LIMIT 3
+2025-06-19 18:06:50,486 INFO:[SAMPLE ROWS] Table `jerseysales`: Retrieved string result
+2025-06-19 18:06:50,486 INFO:[CHUNK CREATION] Table `jerseysales`: Created 1 table chunk + 37 column chunks
+2025-06-19 18:06:50,486 INFO:[CHUNK CREATION] Processing table: key_value
+2025-06-19 18:06:50,496 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `key_value` LIMIT 3
+2025-06-19 18:06:50,496 INFO:[SAMPLE ROWS] Table `key_value`: Retrieved string result
+2025-06-19 18:06:50,496 INFO:[CHUNK CREATION] Table `key_value`: Created 1 table chunk + 12 column chunks
+2025-06-19 18:06:50,496 INFO:[CHUNK CREATION] Processing table: kitsales
+2025-06-19 18:06:50,508 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `kitsales` LIMIT 3
+2025-06-19 18:06:50,509 INFO:[SAMPLE ROWS] Table `kitsales`: Retrieved string result
+2025-06-19 18:06:50,509 INFO:[CHUNK CREATION] Table `kitsales`: Created 1 table chunk + 20 column chunks
+2025-06-19 18:06:50,511 INFO:[CHUNK CREATION] Processing table: kitspurchaseinward
+2025-06-19 18:06:50,517 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `kitspurchaseinward` LIMIT 3
+2025-06-19 18:06:50,517 INFO:[SAMPLE ROWS] Table `kitspurchaseinward`: Retrieved string result
+2025-06-19 18:06:50,517 INFO:[CHUNK CREATION] Table `kitspurchaseinward`: Created 1 table chunk + 17 column chunks
+2025-06-19 18:06:50,517 INFO:[CHUNK CREATION] Processing table: leaveday
+2025-06-19 18:06:50,527 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `leaveday` LIMIT 3
+2025-06-19 18:06:50,530 INFO:[SAMPLE ROWS] Table `leaveday`: Retrieved string result
+2025-06-19 18:06:50,530 INFO:[CHUNK CREATION] Table `leaveday`: Created 1 table chunk + 12 column chunks
+2025-06-19 18:06:50,530 INFO:[CHUNK CREATION] Processing table: leaverequest
+2025-06-19 18:06:50,537 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `leaverequest` LIMIT 3
+2025-06-19 18:06:50,539 INFO:[SAMPLE ROWS] Table `leaverequest`: Retrieved string result
+2025-06-19 18:06:50,541 INFO:[CHUNK CREATION] Table `leaverequest`: Created 1 table chunk + 23 column chunks
+2025-06-19 18:06:50,541 INFO:[CHUNK CREATION] Processing table: leavetype
+2025-06-19 18:06:50,541 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `leavetype` LIMIT 3
+2025-06-19 18:06:50,541 INFO:[SAMPLE ROWS] Table `leavetype`: Retrieved string result
+2025-06-19 18:06:50,541 INFO:[CHUNK CREATION] Table `leavetype`: Created 1 table chunk + 11 column chunks
+2025-06-19 18:06:50,541 INFO:[CHUNK CREATION] Processing table: live_auction_slno
+2025-06-19 18:06:50,554 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `live_auction_slno` LIMIT 3
+2025-06-19 18:06:50,556 INFO:[SAMPLE ROWS] Table `live_auction_slno`: Retrieved string result
+2025-06-19 18:06:50,556 INFO:[CHUNK CREATION] Table `live_auction_slno`: Created 1 table chunk + 5 column chunks
+2025-06-19 18:06:50,556 INFO:[CHUNK CREATION] Processing table: livestreaming
+2025-06-19 18:06:50,561 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `livestreaming` LIMIT 3
+2025-06-19 18:06:50,561 INFO:[SAMPLE ROWS] Table `livestreaming`: Retrieved string result
+2025-06-19 18:06:50,561 INFO:[CHUNK CREATION] Table `livestreaming`: Created 1 table chunk + 13 column chunks
+2025-06-19 18:06:50,561 INFO:[CHUNK CREATION] Processing table: lkk
+2025-06-19 18:06:50,574 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `lkk` LIMIT 3
+2025-06-19 18:06:50,577 INFO:[SAMPLE ROWS] Table `lkk`: Retrieved string result
+2025-06-19 18:06:50,577 INFO:[CHUNK CREATION] Table `lkk`: Created 1 table chunk + 35 column chunks
+2025-06-19 18:06:50,577 INFO:[CHUNK CREATION] Processing table: ll
+2025-06-19 18:06:50,577 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `ll` LIMIT 3
+2025-06-19 18:06:50,585 INFO:[SAMPLE ROWS] Table `ll`: Retrieved string result
+2025-06-19 18:06:50,585 INFO:[CHUNK CREATION] Table `ll`: Created 1 table chunk + 25 column chunks
+2025-06-19 18:06:50,585 INFO:[CHUNK CREATION] Processing table: lll
+2025-06-19 18:06:50,593 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `lll` LIMIT 3
+2025-06-19 18:06:50,595 INFO:[SAMPLE ROWS] Table `lll`: Retrieved string result
+2025-06-19 18:06:50,595 INFO:[CHUNK CREATION] Table `lll`: Created 1 table chunk + 26 column chunks
+2025-06-19 18:06:50,595 INFO:[CHUNK CREATION] Processing table: m_academy_details
+2025-06-19 18:06:50,603 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_academy_details` LIMIT 3
+2025-06-19 18:06:50,604 INFO:[SAMPLE ROWS] Table `m_academy_details`: Retrieved string result
+2025-06-19 18:06:50,604 INFO:[CHUNK CREATION] Table `m_academy_details`: Created 1 table chunk + 8 column chunks
+2025-06-19 18:06:50,605 INFO:[CHUNK CREATION] Processing table: m_achievements
+2025-06-19 18:06:50,610 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_achievements` LIMIT 3
+2025-06-19 18:06:50,610 INFO:[SAMPLE ROWS] Table `m_achievements`: Retrieved string result
+2025-06-19 18:06:50,610 INFO:[CHUNK CREATION] Table `m_achievements`: Created 1 table chunk + 8 column chunks
+2025-06-19 18:06:50,610 INFO:[CHUNK CREATION] Processing table: m_activity
+2025-06-19 18:06:50,619 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_activity` LIMIT 3
+2025-06-19 18:06:50,619 INFO:[SAMPLE ROWS] Table `m_activity`: Retrieved string result
+2025-06-19 18:06:50,619 INFO:[CHUNK CREATION] Table `m_activity`: Created 1 table chunk + 18 column chunks
+2025-06-19 18:06:50,619 INFO:[CHUNK CREATION] Processing table: m_album
+2025-06-19 18:06:50,625 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_album` LIMIT 3
+2025-06-19 18:06:50,625 INFO:[SAMPLE ROWS] Table `m_album`: Retrieved string result
+2025-06-19 18:06:50,625 INFO:[CHUNK CREATION] Table `m_album`: Created 1 table chunk + 18 column chunks
+2025-06-19 18:06:50,625 INFO:[CHUNK CREATION] Processing table: m_alltime_11
+2025-06-19 18:06:50,638 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_alltime_11` LIMIT 3
+2025-06-19 18:06:50,641 INFO:[SAMPLE ROWS] Table `m_alltime_11`: Retrieved string result
+2025-06-19 18:06:50,641 INFO:[CHUNK CREATION] Table `m_alltime_11`: Created 1 table chunk + 17 column chunks
+2025-06-19 18:06:50,641 INFO:[CHUNK CREATION] Processing table: m_appmenu
+2025-06-19 18:06:50,647 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_appmenu` LIMIT 3
+2025-06-19 18:06:50,647 INFO:[SAMPLE ROWS] Table `m_appmenu`: Retrieved string result
+2025-06-19 18:06:50,647 INFO:[CHUNK CREATION] Table `m_appmenu`: Created 1 table chunk + 18 column chunks
+2025-06-19 18:06:50,647 INFO:[CHUNK CREATION] Processing table: m_aqilliz_users
+2025-06-19 18:06:50,656 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_aqilliz_users` LIMIT 3
+2025-06-19 18:06:50,659 INFO:[SAMPLE ROWS] Table `m_aqilliz_users`: Retrieved string result
+2025-06-19 18:06:50,659 INFO:[CHUNK CREATION] Table `m_aqilliz_users`: Created 1 table chunk + 13 column chunks
+2025-06-19 18:06:50,659 INFO:[CHUNK CREATION] Processing table: m_auction_game_players
+2025-06-19 18:06:50,665 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_auction_game_players` LIMIT 3
+2025-06-19 18:06:50,667 INFO:[SAMPLE ROWS] Table `m_auction_game_players`: Retrieved string result
+2025-06-19 18:06:50,667 INFO:[CHUNK CREATION] Table `m_auction_game_players`: Created 1 table chunk + 17 column chunks
+2025-06-19 18:06:50,667 INFO:[CHUNK CREATION] Processing table: m_auction_players
+2025-06-19 18:06:50,675 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_auction_players` LIMIT 3
+2025-06-19 18:06:50,677 INFO:[SAMPLE ROWS] Table `m_auction_players`: Retrieved string result
+2025-06-19 18:06:50,677 INFO:[CHUNK CREATION] Table `m_auction_players`: Created 1 table chunk + 10 column chunks
+2025-06-19 18:06:50,677 INFO:[CHUNK CREATION] Processing table: m_auction_team
+2025-06-19 18:06:50,683 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_auction_team` LIMIT 3
+2025-06-19 18:06:50,683 INFO:[SAMPLE ROWS] Table `m_auction_team`: Retrieved string result
+2025-06-19 18:06:50,683 INFO:[CHUNK CREATION] Table `m_auction_team`: Created 1 table chunk + 8 column chunks
+2025-06-19 18:06:50,685 INFO:[CHUNK CREATION] Processing table: m_auctionplayers
+2025-06-19 18:06:50,692 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_auctionplayers` LIMIT 3
+2025-06-19 18:06:50,692 INFO:[SAMPLE ROWS] Table `m_auctionplayers`: Retrieved string result
+2025-06-19 18:06:50,692 INFO:[CHUNK CREATION] Table `m_auctionplayers`: Created 1 table chunk + 13 column chunks
+2025-06-19 18:06:50,695 INFO:[CHUNK CREATION] Processing table: m_author
+2025-06-19 18:06:50,701 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_author` LIMIT 3
+2025-06-19 18:06:50,703 INFO:[SAMPLE ROWS] Table `m_author`: Retrieved string result
+2025-06-19 18:06:50,703 INFO:[CHUNK CREATION] Table `m_author`: Created 1 table chunk + 17 column chunks
+2025-06-19 18:06:50,703 INFO:[CHUNK CREATION] Processing table: m_banner
+2025-06-19 18:06:50,711 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_banner` LIMIT 3
+2025-06-19 18:06:50,714 INFO:[SAMPLE ROWS] Table `m_banner`: Retrieved string result
+2025-06-19 18:06:50,714 INFO:[CHUNK CREATION] Table `m_banner`: Created 1 table chunk + 21 column chunks
+2025-06-19 18:06:50,714 INFO:[CHUNK CREATION] Processing table: m_battingstats
+2025-06-19 18:06:50,726 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_battingstats` LIMIT 3
+2025-06-19 18:06:50,727 INFO:[SAMPLE ROWS] Table `m_battingstats`: Retrieved string result
+2025-06-19 18:06:50,727 INFO:[CHUNK CREATION] Table `m_battingstats`: Created 1 table chunk + 16 column chunks
+2025-06-19 18:06:50,727 INFO:[CHUNK CREATION] Processing table: m_blog
+2025-06-19 18:06:50,737 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_blog` LIMIT 3
+2025-06-19 18:06:50,741 INFO:[SAMPLE ROWS] Table `m_blog`: Retrieved string result
+2025-06-19 18:06:50,741 INFO:[CHUNK CREATION] Table `m_blog`: Created 1 table chunk + 28 column chunks
+2025-06-19 18:06:50,742 INFO:[CHUNK CREATION] Processing table: m_booking
+2025-06-19 18:06:50,746 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_booking` LIMIT 3
+2025-06-19 18:06:50,750 INFO:[SAMPLE ROWS] Table `m_booking`: Retrieved string result
+2025-06-19 18:06:50,750 INFO:[CHUNK CREATION] Table `m_booking`: Created 1 table chunk + 26 column chunks
+2025-06-19 18:06:50,750 INFO:[CHUNK CREATION] Processing table: m_bowlingstats
+2025-06-19 18:06:50,759 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_bowlingstats` LIMIT 3
+2025-06-19 18:06:50,761 INFO:[SAMPLE ROWS] Table `m_bowlingstats`: Retrieved string result
+2025-06-19 18:06:50,761 INFO:[CHUNK CREATION] Table `m_bowlingstats`: Created 1 table chunk + 16 column chunks
+2025-06-19 18:06:50,761 INFO:[CHUNK CREATION] Processing table: m_contest
+2025-06-19 18:06:50,795 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_contest` LIMIT 3
+2025-06-19 18:06:50,803 INFO:[SAMPLE ROWS] Table `m_contest`: Retrieved string result
+2025-06-19 18:06:50,803 INFO:[CHUNK CREATION] Table `m_contest`: Created 1 table chunk + 30 column chunks
+2025-06-19 18:06:50,803 INFO:[CHUNK CREATION] Processing table: m_contest_downloads
+2025-06-19 18:06:50,814 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_contest_downloads` LIMIT 3
+2025-06-19 18:06:50,816 INFO:[SAMPLE ROWS] Table `m_contest_downloads`: Retrieved string result
+2025-06-19 18:06:50,816 INFO:[CHUNK CREATION] Table `m_contest_downloads`: Created 1 table chunk + 15 column chunks
+2025-06-19 18:06:50,816 INFO:[CHUNK CREATION] Processing table: m_contest_playbuzz
+2025-06-19 18:06:50,828 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_contest_playbuzz` LIMIT 3
+2025-06-19 18:06:50,830 INFO:[SAMPLE ROWS] Table `m_contest_playbuzz`: Retrieved string result
+2025-06-19 18:06:50,831 INFO:[CHUNK CREATION] Table `m_contest_playbuzz`: Created 1 table chunk + 17 column chunks
+2025-06-19 18:06:50,831 INFO:[CHUNK CREATION] Processing table: m_contest_questions
+2025-06-19 18:06:50,840 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_contest_questions` LIMIT 3
+2025-06-19 18:06:50,844 INFO:[SAMPLE ROWS] Table `m_contest_questions`: Retrieved string result
+2025-06-19 18:06:50,844 INFO:[CHUNK CREATION] Table `m_contest_questions`: Created 1 table chunk + 19 column chunks
+2025-06-19 18:06:50,844 INFO:[CHUNK CREATION] Processing table: m_contest_type
+2025-06-19 18:06:50,849 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_contest_type` LIMIT 3
+2025-06-19 18:06:50,851 INFO:[SAMPLE ROWS] Table `m_contest_type`: Retrieved string result
+2025-06-19 18:06:50,851 INFO:[CHUNK CREATION] Table `m_contest_type`: Created 1 table chunk + 14 column chunks
+2025-06-19 18:06:50,851 INFO:[CHUNK CREATION] Processing table: m_country_master
+2025-06-19 18:06:50,858 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_country_master` LIMIT 3
+2025-06-19 18:06:50,859 INFO:[SAMPLE ROWS] Table `m_country_master`: Retrieved string result
+2025-06-19 18:06:50,859 INFO:[CHUNK CREATION] Table `m_country_master`: Created 1 table chunk + 6 column chunks
+2025-06-19 18:06:50,859 INFO:[CHUNK CREATION] Processing table: m_cricket_details
+2025-06-19 18:06:50,862 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_cricket_details` LIMIT 3
+2025-06-19 18:06:50,862 INFO:[SAMPLE ROWS] Table `m_cricket_details`: Retrieved string result
+2025-06-19 18:06:50,862 INFO:[CHUNK CREATION] Table `m_cricket_details`: Created 1 table chunk + 27 column chunks
+2025-06-19 18:06:50,862 INFO:[CHUNK CREATION] Processing table: m_csk_notifications
+2025-06-19 18:06:50,878 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_csk_notifications` LIMIT 3
+2025-06-19 18:06:50,879 INFO:[SAMPLE ROWS] Table `m_csk_notifications`: Retrieved string result
+2025-06-19 18:06:50,879 INFO:[CHUNK CREATION] Table `m_csk_notifications`: Created 1 table chunk + 19 column chunks
+2025-06-19 18:06:50,879 INFO:[CHUNK CREATION] Processing table: m_csk_referral
+2025-06-19 18:06:50,887 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_csk_referral` LIMIT 3
+2025-06-19 18:06:50,890 INFO:[SAMPLE ROWS] Table `m_csk_referral`: Retrieved string result
+2025-06-19 18:06:50,890 INFO:[CHUNK CREATION] Table `m_csk_referral`: Created 1 table chunk + 13 column chunks
+2025-06-19 18:06:50,890 INFO:[CHUNK CREATION] Processing table: m_csk_roar
+2025-06-19 18:06:50,900 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_csk_roar` LIMIT 3
+2025-06-19 18:06:50,902 INFO:[SAMPLE ROWS] Table `m_csk_roar`: Retrieved string result
+2025-06-19 18:06:50,902 INFO:[CHUNK CREATION] Table `m_csk_roar`: Created 1 table chunk + 21 column chunks
+2025-06-19 18:06:50,902 INFO:[CHUNK CREATION] Processing table: m_csk_team
+2025-06-19 18:06:50,914 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_csk_team` LIMIT 3
+2025-06-19 18:06:50,914 INFO:[SAMPLE ROWS] Table `m_csk_team`: Retrieved string result
+2025-06-19 18:06:50,914 INFO:[CHUNK CREATION] Table `m_csk_team`: Created 1 table chunk + 22 column chunks
+2025-06-19 18:06:50,914 INFO:[CHUNK CREATION] Processing table: m_csk_team_detail
+2025-06-19 18:06:50,925 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_csk_team_detail` LIMIT 3
+2025-06-19 18:06:50,926 INFO:[SAMPLE ROWS] Table `m_csk_team_detail`: Retrieved string result
+2025-06-19 18:06:50,926 INFO:[CHUNK CREATION] Table `m_csk_team_detail`: Created 1 table chunk + 8 column chunks
+2025-06-19 18:06:50,926 INFO:[CHUNK CREATION] Processing table: m_csktv_category
+2025-06-19 18:06:50,927 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_csktv_category` LIMIT 3
+2025-06-19 18:06:50,927 INFO:[SAMPLE ROWS] Table `m_csktv_category`: Retrieved string result
+2025-06-19 18:06:50,927 INFO:[CHUNK CREATION] Table `m_csktv_category`: Created 1 table chunk + 20 column chunks
+2025-06-19 18:06:50,927 INFO:[CHUNK CREATION] Processing table: m_csktv_video
+2025-06-19 18:06:50,945 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_csktv_video` LIMIT 3
+2025-06-19 18:06:50,945 INFO:[SAMPLE ROWS] Table `m_csktv_video`: Retrieved string result
+2025-06-19 18:06:50,945 INFO:[CHUNK CREATION] Table `m_csktv_video`: Created 1 table chunk + 33 column chunks
+2025-06-19 18:06:50,945 INFO:[CHUNK CREATION] Processing table: m_fan_app_content_dtl
+2025-06-19 18:06:50,954 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_fan_app_content_dtl` LIMIT 3
+2025-06-19 18:06:50,956 INFO:[SAMPLE ROWS] Table `m_fan_app_content_dtl`: Retrieved string result
+2025-06-19 18:06:50,956 INFO:[CHUNK CREATION] Table `m_fan_app_content_dtl`: Created 1 table chunk + 14 column chunks
+2025-06-19 18:06:50,956 INFO:[CHUNK CREATION] Processing table: m_fan_upload_image
+2025-06-19 18:06:50,963 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_fan_upload_image` LIMIT 3
+2025-06-19 18:06:50,963 INFO:[SAMPLE ROWS] Table `m_fan_upload_image`: Retrieved string result
+2025-06-19 18:06:50,963 INFO:[CHUNK CREATION] Table `m_fan_upload_image`: Created 1 table chunk + 19 column chunks
+2025-06-19 18:06:50,963 INFO:[CHUNK CREATION] Processing table: m_fan_upload_video
+2025-06-19 18:06:50,974 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_fan_upload_video` LIMIT 3
+2025-06-19 18:06:50,974 INFO:[SAMPLE ROWS] Table `m_fan_upload_video`: Retrieved string result
+2025-06-19 18:06:50,974 INFO:[CHUNK CREATION] Table `m_fan_upload_video`: Created 1 table chunk + 23 column chunks
+2025-06-19 18:06:50,974 INFO:[CHUNK CREATION] Processing table: m_fanplayers
+2025-06-19 18:06:50,974 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_fanplayers` LIMIT 3
+2025-06-19 18:06:50,974 INFO:[SAMPLE ROWS] Table `m_fanplayers`: Retrieved string result
+2025-06-19 18:06:50,974 INFO:[CHUNK CREATION] Table `m_fanplayers`: Created 1 table chunk + 10 column chunks
+2025-06-19 18:06:50,974 INFO:[CHUNK CREATION] Processing table: m_fanquestions
+2025-06-19 18:06:50,991 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_fanquestions` LIMIT 3
+2025-06-19 18:06:50,993 INFO:[SAMPLE ROWS] Table `m_fanquestions`: Retrieved string result
+2025-06-19 18:06:50,993 INFO:[CHUNK CREATION] Table `m_fanquestions`: Created 1 table chunk + 14 column chunks
+2025-06-19 18:06:50,993 INFO:[CHUNK CREATION] Processing table: m_fantemplatequestions
+2025-06-19 18:06:50,993 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_fantemplatequestions` LIMIT 3
+2025-06-19 18:06:50,993 INFO:[SAMPLE ROWS] Table `m_fantemplatequestions`: Retrieved string result
+2025-06-19 18:06:50,993 INFO:[CHUNK CREATION] Table `m_fantemplatequestions`: Created 1 table chunk + 16 column chunks
+2025-06-19 18:06:50,993 INFO:[CHUNK CREATION] Processing table: m_food_products
+2025-06-19 18:06:51,008 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_food_products` LIMIT 3
+2025-06-19 18:06:51,010 INFO:[SAMPLE ROWS] Table `m_food_products`: Retrieved string result
+2025-06-19 18:06:51,010 INFO:[CHUNK CREATION] Table `m_food_products`: Created 1 table chunk + 17 column chunks
+2025-06-19 18:06:51,010 INFO:[CHUNK CREATION] Processing table: m_gallery
+2025-06-19 18:06:51,020 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_gallery` LIMIT 3
+2025-06-19 18:06:51,023 INFO:[SAMPLE ROWS] Table `m_gallery`: Retrieved string result
+2025-06-19 18:06:51,023 INFO:[CHUNK CREATION] Table `m_gallery`: Created 1 table chunk + 47 column chunks
+2025-06-19 18:06:51,024 INFO:[CHUNK CREATION] Processing table: m_gallery_year
+2025-06-19 18:06:51,025 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_gallery_year` LIMIT 3
+2025-06-19 18:06:51,025 INFO:[SAMPLE ROWS] Table `m_gallery_year`: Retrieved string result
+2025-06-19 18:06:51,025 INFO:[CHUNK CREATION] Table `m_gallery_year`: Created 1 table chunk + 11 column chunks
+2025-06-19 18:06:51,025 INFO:[CHUNK CREATION] Processing table: m_gamify_rewards_and_redeems
+2025-06-19 18:06:51,039 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_gamify_rewards_and_redeems` LIMIT 3
+2025-06-19 18:06:51,040 INFO:[SAMPLE ROWS] Table `m_gamify_rewards_and_redeems`: Retrieved string result
+2025-06-19 18:06:51,040 INFO:[CHUNK CREATION] Table `m_gamify_rewards_and_redeems`: Created 1 table chunk + 13 column chunks
+2025-06-19 18:06:51,042 INFO:[CHUNK CREATION] Processing table: m_gamify_treasurant
+2025-06-19 18:06:51,044 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_gamify_treasurant` LIMIT 3
+2025-06-19 18:06:51,049 INFO:[SAMPLE ROWS] Table `m_gamify_treasurant`: Retrieved string result
+2025-06-19 18:06:51,049 INFO:[CHUNK CREATION] Table `m_gamify_treasurant`: Created 1 table chunk + 11 column chunks
+2025-06-19 18:06:51,049 INFO:[CHUNK CREATION] Processing table: m_home_feeds
+2025-06-19 18:06:51,056 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_home_feeds` LIMIT 3
+2025-06-19 18:06:51,058 INFO:[SAMPLE ROWS] Table `m_home_feeds`: Retrieved string result
+2025-06-19 18:06:51,058 INFO:[CHUNK CREATION] Table `m_home_feeds`: Created 1 table chunk + 12 column chunks
+2025-06-19 18:06:51,058 INFO:[CHUNK CREATION] Processing table: m_instituition_details
+2025-06-19 18:06:51,058 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_instituition_details` LIMIT 3
+2025-06-19 18:06:51,058 INFO:[SAMPLE ROWS] Table `m_instituition_details`: Retrieved string result
+2025-06-19 18:06:51,058 INFO:[CHUNK CREATION] Table `m_instituition_details`: Created 1 table chunk + 13 column chunks
+2025-06-19 18:06:51,058 INFO:[CHUNK CREATION] Processing table: m_institution_type
+2025-06-19 18:06:51,074 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_institution_type` LIMIT 3
+2025-06-19 18:06:51,075 INFO:[SAMPLE ROWS] Table `m_institution_type`: Retrieved string result
+2025-06-19 18:06:51,075 INFO:[CHUNK CREATION] Table `m_institution_type`: Created 1 table chunk + 10 column chunks
+2025-06-19 18:06:51,075 INFO:[CHUNK CREATION] Processing table: m_ipl_auctions
+2025-06-19 18:06:51,083 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_ipl_auctions` LIMIT 3
+2025-06-19 18:06:51,084 INFO:[SAMPLE ROWS] Table `m_ipl_auctions`: Retrieved string result
+2025-06-19 18:06:51,084 INFO:[CHUNK CREATION] Table `m_ipl_auctions`: Created 1 table chunk + 14 column chunks
+2025-06-19 18:06:51,084 INFO:[CHUNK CREATION] Processing table: m_json_redirect
+2025-06-19 18:06:51,091 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_json_redirect` LIMIT 3
+2025-06-19 18:06:51,092 INFO:[SAMPLE ROWS] Table `m_json_redirect`: Retrieved string result
+2025-06-19 18:06:51,092 INFO:[CHUNK CREATION] Table `m_json_redirect`: Created 1 table chunk + 6 column chunks
+2025-06-19 18:06:51,092 INFO:[CHUNK CREATION] Processing table: m_lions_reward
+2025-06-19 18:06:51,101 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_lions_reward` LIMIT 3
+2025-06-19 18:06:51,102 INFO:[SAMPLE ROWS] Table `m_lions_reward`: Retrieved string result
+2025-06-19 18:06:51,102 INFO:[CHUNK CREATION] Table `m_lions_reward`: Created 1 table chunk + 16 column chunks
+2025-06-19 18:06:51,102 INFO:[CHUNK CREATION] Processing table: m_listquestion
+2025-06-19 18:06:51,111 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_listquestion` LIMIT 3
+2025-06-19 18:06:51,112 INFO:[SAMPLE ROWS] Table `m_listquestion`: Retrieved string result
+2025-06-19 18:06:51,112 INFO:[CHUNK CREATION] Table `m_listquestion`: Created 1 table chunk + 18 column chunks
+2025-06-19 18:06:51,113 INFO:[CHUNK CREATION] Processing table: m_mainmenu_role_mapping
+2025-06-19 18:06:51,118 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_mainmenu_role_mapping` LIMIT 3
+2025-06-19 18:06:51,118 INFO:[SAMPLE ROWS] Table `m_mainmenu_role_mapping`: Retrieved string result
+2025-06-19 18:06:51,118 INFO:[CHUNK CREATION] Table `m_mainmenu_role_mapping`: Created 1 table chunk + 15 column chunks
+2025-06-19 18:06:51,118 INFO:[CHUNK CREATION] Processing table: m_match_fixture
+2025-06-19 18:06:51,126 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_match_fixture` LIMIT 3
+2025-06-19 18:06:51,126 INFO:[SAMPLE ROWS] Table `m_match_fixture`: Retrieved string result
+2025-06-19 18:06:51,126 INFO:[CHUNK CREATION] Table `m_match_fixture`: Created 1 table chunk + 24 column chunks
+2025-06-19 18:06:51,126 INFO:[CHUNK CREATION] Processing table: m_match_schedule
+2025-06-19 18:06:51,137 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_match_schedule` LIMIT 3
+2025-06-19 18:06:51,140 INFO:[SAMPLE ROWS] Table `m_match_schedule`: Retrieved string result
+2025-06-19 18:06:51,140 INFO:[CHUNK CREATION] Table `m_match_schedule`: Created 1 table chunk + 15 column chunks
+2025-06-19 18:06:51,140 INFO:[CHUNK CREATION] Processing table: m_match_url
+2025-06-19 18:06:51,144 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_match_url` LIMIT 3
+2025-06-19 18:06:51,144 INFO:[SAMPLE ROWS] Table `m_match_url`: Retrieved string result
+2025-06-19 18:06:51,144 INFO:[CHUNK CREATION] Table `m_match_url`: Created 1 table chunk + 7 column chunks
+2025-06-19 18:06:51,144 INFO:[CHUNK CREATION] Processing table: m_menu
+2025-06-19 18:06:51,154 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_menu` LIMIT 3
+2025-06-19 18:06:51,156 INFO:[SAMPLE ROWS] Table `m_menu`: Retrieved string result
+2025-06-19 18:06:51,157 INFO:[CHUNK CREATION] Table `m_menu`: Created 1 table chunk + 17 column chunks
+2025-06-19 18:06:51,157 INFO:[CHUNK CREATION] Processing table: m_menu_bk
+2025-06-19 18:06:51,160 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_menu_bk` LIMIT 3
+2025-06-19 18:06:51,160 INFO:[SAMPLE ROWS] Table `m_menu_bk`: Retrieved string result
+2025-06-19 18:06:51,160 INFO:[CHUNK CREATION] Table `m_menu_bk`: Created 1 table chunk + 14 column chunks
+2025-06-19 18:06:51,160 INFO:[CHUNK CREATION] Processing table: m_news
+2025-06-19 18:06:51,173 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_news` LIMIT 3
+2025-06-19 18:06:51,175 INFO:[SAMPLE ROWS] Table `m_news`: Retrieved string result
+2025-06-19 18:06:51,175 INFO:[CHUNK CREATION] Table `m_news`: Created 1 table chunk + 29 column chunks
+2025-06-19 18:06:51,175 INFO:[CHUNK CREATION] Processing table: m_news_fanzone
+2025-06-19 18:06:51,175 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_news_fanzone` LIMIT 3
+2025-06-19 18:06:51,175 INFO:[SAMPLE ROWS] Table `m_news_fanzone`: Retrieved string result
+2025-06-19 18:06:51,175 INFO:[CHUNK CREATION] Table `m_news_fanzone`: Created 1 table chunk + 20 column chunks
+2025-06-19 18:06:51,175 INFO:[CHUNK CREATION] Processing table: m_news_images
+2025-06-19 18:06:51,192 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_news_images` LIMIT 3
+2025-06-19 18:06:51,193 INFO:[SAMPLE ROWS] Table `m_news_images`: Retrieved string result
+2025-06-19 18:06:51,193 INFO:[CHUNK CREATION] Table `m_news_images`: Created 1 table chunk + 15 column chunks
+2025-06-19 18:06:51,193 INFO:[CHUNK CREATION] Processing table: m_news_provider
+2025-06-19 18:06:51,200 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_news_provider` LIMIT 3
+2025-06-19 18:06:51,201 INFO:[SAMPLE ROWS] Table `m_news_provider`: Retrieved string result
+2025-06-19 18:06:51,201 INFO:[CHUNK CREATION] Table `m_news_provider`: Created 1 table chunk + 17 column chunks
+2025-06-19 18:06:51,201 INFO:[CHUNK CREATION] Processing table: m_news_provider_fanzone
+2025-06-19 18:06:51,210 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_news_provider_fanzone` LIMIT 3
+2025-06-19 18:06:51,211 INFO:[SAMPLE ROWS] Table `m_news_provider_fanzone`: Retrieved string result
+2025-06-19 18:06:51,211 INFO:[CHUNK CREATION] Table `m_news_provider_fanzone`: Created 1 table chunk + 14 column chunks
+2025-06-19 18:06:51,211 INFO:[CHUNK CREATION] Processing table: m_notification_type
+2025-06-19 18:06:51,217 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_notification_type` LIMIT 3
+2025-06-19 18:06:51,217 INFO:[SAMPLE ROWS] Table `m_notification_type`: Retrieved string result
+2025-06-19 18:06:51,217 INFO:[CHUNK CREATION] Table `m_notification_type`: Created 1 table chunk + 12 column chunks
+2025-06-19 18:06:51,217 INFO:[CHUNK CREATION] Processing table: m_notify_products
+2025-06-19 18:06:51,226 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_notify_products` LIMIT 3
+2025-06-19 18:06:51,226 INFO:[SAMPLE ROWS] Table `m_notify_products`: Retrieved string result
+2025-06-19 18:06:51,226 INFO:[CHUNK CREATION] Table `m_notify_products`: Created 1 table chunk + 13 column chunks
+2025-06-19 18:06:51,226 INFO:[CHUNK CREATION] Processing table: m_online_partner
+2025-06-19 18:06:51,235 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_online_partner` LIMIT 3
+2025-06-19 18:06:51,238 INFO:[SAMPLE ROWS] Table `m_online_partner`: Retrieved string result
+2025-06-19 18:06:51,239 INFO:[CHUNK CREATION] Table `m_online_partner`: Created 1 table chunk + 34 column chunks
+2025-06-19 18:06:51,239 INFO:[CHUNK CREATION] Processing table: m_other_blogs
+2025-06-19 18:06:51,242 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_other_blogs` LIMIT 3
+2025-06-19 18:06:51,242 INFO:[SAMPLE ROWS] Table `m_other_blogs`: Retrieved string result
+2025-06-19 18:06:51,242 INFO:[CHUNK CREATION] Table `m_other_blogs`: Created 1 table chunk + 24 column chunks
+2025-06-19 18:06:51,242 INFO:[CHUNK CREATION] Processing table: m_other_users
+2025-06-19 18:06:51,256 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_other_users` LIMIT 3
+2025-06-19 18:06:51,258 INFO:[SAMPLE ROWS] Table `m_other_users`: Retrieved string result
+2025-06-19 18:06:51,259 INFO:[CHUNK CREATION] Table `m_other_users`: Created 1 table chunk + 16 column chunks
+2025-06-19 18:06:51,259 INFO:[CHUNK CREATION] Processing table: m_pages
+2025-06-19 18:06:51,260 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_pages` LIMIT 3
+2025-06-19 18:06:51,260 INFO:[SAMPLE ROWS] Table `m_pages`: Retrieved string result
+2025-06-19 18:06:51,260 INFO:[CHUNK CREATION] Table `m_pages`: Created 1 table chunk + 15 column chunks
+2025-06-19 18:06:51,260 INFO:[CHUNK CREATION] Processing table: m_parameters
+2025-06-19 18:06:51,272 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_parameters` LIMIT 3
+2025-06-19 18:06:51,274 INFO:[SAMPLE ROWS] Table `m_parameters`: Retrieved string result
+2025-06-19 18:06:51,274 INFO:[CHUNK CREATION] Table `m_parameters`: Created 1 table chunk + 10 column chunks
+2025-06-19 18:06:51,274 INFO:[CHUNK CREATION] Processing table: m_payment_promotions
+2025-06-19 18:06:51,274 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_payment_promotions` LIMIT 3
+2025-06-19 18:06:51,274 INFO:[SAMPLE ROWS] Table `m_payment_promotions`: Retrieved string result
+2025-06-19 18:06:51,274 INFO:[CHUNK CREATION] Table `m_payment_promotions`: Created 1 table chunk + 7 column chunks
+2025-06-19 18:06:51,274 INFO:[CHUNK CREATION] Processing table: m_persona
+2025-06-19 18:06:51,292 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_persona` LIMIT 3
+2025-06-19 18:06:51,292 INFO:[SAMPLE ROWS] Table `m_persona`: Retrieved string result
+2025-06-19 18:06:51,292 INFO:[CHUNK CREATION] Table `m_persona`: Created 1 table chunk + 17 column chunks
+2025-06-19 18:06:51,292 INFO:[CHUNK CREATION] Processing table: m_personal_details
+2025-06-19 18:06:51,301 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_personal_details` LIMIT 3
+2025-06-19 18:06:51,301 INFO:[SAMPLE ROWS] Table `m_personal_details`: Retrieved string result
+2025-06-19 18:06:51,301 INFO:[CHUNK CREATION] Table `m_personal_details`: Created 1 table chunk + 32 column chunks
+2025-06-19 18:06:51,305 INFO:[CHUNK CREATION] Processing table: m_player_statistics
+2025-06-19 18:06:51,308 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_player_statistics` LIMIT 3
+2025-06-19 18:06:51,308 INFO:[SAMPLE ROWS] Table `m_player_statistics`: Retrieved string result
+2025-06-19 18:06:51,308 INFO:[CHUNK CREATION] Table `m_player_statistics`: Created 1 table chunk + 35 column chunks
+2025-06-19 18:06:51,308 INFO:[CHUNK CREATION] Processing table: m_players
+2025-06-19 18:06:51,324 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_players` LIMIT 3
+2025-06-19 18:06:51,325 INFO:[SAMPLE ROWS] Table `m_players`: Retrieved string result
+2025-06-19 18:06:51,325 INFO:[CHUNK CREATION] Table `m_players`: Created 1 table chunk + 16 column chunks
+2025-06-19 18:06:51,325 INFO:[CHUNK CREATION] Processing table: m_players_profile
+2025-06-19 18:06:51,336 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_players_profile` LIMIT 3
+2025-06-19 18:06:51,336 INFO:[SAMPLE ROWS] Table `m_players_profile`: Retrieved string result
+2025-06-19 18:06:51,336 INFO:[CHUNK CREATION] Table `m_players_profile`: Created 1 table chunk + 28 column chunks
+2025-06-19 18:06:51,336 INFO:[CHUNK CREATION] Processing table: m_players_ratecard
+2025-06-19 18:06:51,344 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_players_ratecard` LIMIT 3
+2025-06-19 18:06:51,344 INFO:[SAMPLE ROWS] Table `m_players_ratecard`: Retrieved string result
+2025-06-19 18:06:51,344 INFO:[CHUNK CREATION] Table `m_players_ratecard`: Created 1 table chunk + 18 column chunks
+2025-06-19 18:06:51,344 INFO:[CHUNK CREATION] Processing table: m_poiltusers
+2025-06-19 18:06:51,354 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_poiltusers` LIMIT 3
+2025-06-19 18:06:51,356 INFO:[SAMPLE ROWS] Table `m_poiltusers`: Retrieved string result
+2025-06-19 18:06:51,356 INFO:[CHUNK CREATION] Table `m_poiltusers`: Created 1 table chunk + 18 column chunks
+2025-06-19 18:06:51,356 INFO:[CHUNK CREATION] Processing table: m_prize
+2025-06-19 18:06:51,361 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_prize` LIMIT 3
+2025-06-19 18:06:51,361 INFO:[SAMPLE ROWS] Table `m_prize`: Retrieved string result
+2025-06-19 18:06:51,361 INFO:[CHUNK CREATION] Table `m_prize`: Created 1 table chunk + 14 column chunks
+2025-06-19 18:06:51,361 INFO:[CHUNK CREATION] Processing table: m_program
+2025-06-19 18:06:51,371 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_program` LIMIT 3
+2025-06-19 18:06:51,372 INFO:[SAMPLE ROWS] Table `m_program`: Retrieved string result
+2025-06-19 18:06:51,373 INFO:[CHUNK CREATION] Table `m_program`: Created 1 table chunk + 11 column chunks
+2025-06-19 18:06:51,373 INFO:[CHUNK CREATION] Processing table: m_rdm_cart
+2025-06-19 18:06:51,376 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_rdm_cart` LIMIT 3
+2025-06-19 18:06:51,381 INFO:[SAMPLE ROWS] Table `m_rdm_cart`: Retrieved string result
+2025-06-19 18:06:51,381 INFO:[CHUNK CREATION] Table `m_rdm_cart`: Created 1 table chunk + 18 column chunks
+2025-06-19 18:06:51,381 INFO:[CHUNK CREATION] Processing table: m_rdm_order
+2025-06-19 18:06:51,389 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_rdm_order` LIMIT 3
+2025-06-19 18:06:51,390 INFO:[SAMPLE ROWS] Table `m_rdm_order`: Retrieved string result
+2025-06-19 18:06:51,391 INFO:[CHUNK CREATION] Table `m_rdm_order`: Created 1 table chunk + 21 column chunks
+2025-06-19 18:06:51,391 INFO:[CHUNK CREATION] Processing table: m_rdm_order_details
+2025-06-19 18:06:51,398 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_rdm_order_details` LIMIT 3
+2025-06-19 18:06:51,398 INFO:[SAMPLE ROWS] Table `m_rdm_order_details`: Retrieved string result
+2025-06-19 18:06:51,398 INFO:[CHUNK CREATION] Table `m_rdm_order_details`: Created 1 table chunk + 18 column chunks
+2025-06-19 18:06:51,398 INFO:[CHUNK CREATION] Processing table: m_rdm_order_history
+2025-06-19 18:06:51,408 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_rdm_order_history` LIMIT 3
+2025-06-19 18:06:51,408 INFO:[SAMPLE ROWS] Table `m_rdm_order_history`: Retrieved string result
+2025-06-19 18:06:51,408 INFO:[CHUNK CREATION] Table `m_rdm_order_history`: Created 1 table chunk + 17 column chunks
+2025-06-19 18:06:51,408 INFO:[CHUNK CREATION] Processing table: m_rdm_product
+2025-06-19 18:06:51,408 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_rdm_product` LIMIT 3
+2025-06-19 18:06:51,408 INFO:[SAMPLE ROWS] Table `m_rdm_product`: Retrieved string result
+2025-06-19 18:06:51,408 INFO:[CHUNK CREATION] Table `m_rdm_product`: Created 1 table chunk + 21 column chunks
+2025-06-19 18:06:51,408 INFO:[CHUNK CREATION] Processing table: m_rdm_product_images
+2025-06-19 18:06:51,427 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_rdm_product_images` LIMIT 3
+2025-06-19 18:06:51,427 INFO:[SAMPLE ROWS] Table `m_rdm_product_images`: Retrieved string result
+2025-06-19 18:06:51,427 INFO:[CHUNK CREATION] Table `m_rdm_product_images`: Created 1 table chunk + 15 column chunks
+2025-06-19 18:06:51,427 INFO:[CHUNK CREATION] Processing table: m_rdm_product_stock_entry
+2025-06-19 18:06:51,434 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_rdm_product_stock_entry` LIMIT 3
+2025-06-19 18:06:51,435 INFO:[SAMPLE ROWS] Table `m_rdm_product_stock_entry`: Retrieved string result
+2025-06-19 18:06:51,435 INFO:[CHUNK CREATION] Table `m_rdm_product_stock_entry`: Created 1 table chunk + 18 column chunks
+2025-06-19 18:06:51,435 INFO:[CHUNK CREATION] Processing table: m_rdm_product_variants
+2025-06-19 18:06:51,443 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_rdm_product_variants` LIMIT 3
+2025-06-19 18:06:51,443 INFO:[SAMPLE ROWS] Table `m_rdm_product_variants`: Retrieved string result
+2025-06-19 18:06:51,443 INFO:[CHUNK CREATION] Table `m_rdm_product_variants`: Created 1 table chunk + 17 column chunks
+2025-06-19 18:06:51,443 INFO:[CHUNK CREATION] Processing table: m_remind_products
+2025-06-19 18:06:51,452 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_remind_products` LIMIT 3
+2025-06-19 18:06:51,453 INFO:[SAMPLE ROWS] Table `m_remind_products`: Retrieved string result
+2025-06-19 18:06:51,453 INFO:[CHUNK CREATION] Table `m_remind_products`: Created 1 table chunk + 11 column chunks
+2025-06-19 18:06:51,453 INFO:[CHUNK CREATION] Processing table: m_restaurants
+2025-06-19 18:06:51,459 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_restaurants` LIMIT 3
+2025-06-19 18:06:51,459 INFO:[SAMPLE ROWS] Table `m_restaurants`: Retrieved string result
+2025-06-19 18:06:51,459 INFO:[CHUNK CREATION] Table `m_restaurants`: Created 1 table chunk + 12 column chunks
+2025-06-19 18:06:51,459 INFO:[CHUNK CREATION] Processing table: m_role_permissions
+2025-06-19 18:06:51,470 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_role_permissions` LIMIT 3
+2025-06-19 18:06:51,472 INFO:[SAMPLE ROWS] Table `m_role_permissions`: Retrieved string result
+2025-06-19 18:06:51,472 INFO:[CHUNK CREATION] Table `m_role_permissions`: Created 1 table chunk + 13 column chunks
+2025-06-19 18:06:51,473 INFO:[CHUNK CREATION] Processing table: m_roles
+2025-06-19 18:06:51,475 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_roles` LIMIT 3
+2025-06-19 18:06:51,475 INFO:[SAMPLE ROWS] Table `m_roles`: Retrieved string result
+2025-06-19 18:06:51,475 INFO:[CHUNK CREATION] Table `m_roles`: Created 1 table chunk + 14 column chunks
+2025-06-19 18:06:51,475 INFO:[CHUNK CREATION] Processing table: m_route
+2025-06-19 18:06:51,488 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_route` LIMIT 3
+2025-06-19 18:06:51,489 INFO:[SAMPLE ROWS] Table `m_route`: Retrieved string result
+2025-06-19 18:06:51,489 INFO:[CHUNK CREATION] Table `m_route`: Created 1 table chunk + 14 column chunks
+2025-06-19 18:06:51,489 INFO:[CHUNK CREATION] Processing table: m_season
+2025-06-19 18:06:51,498 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_season` LIMIT 3
+2025-06-19 18:06:51,499 INFO:[SAMPLE ROWS] Table `m_season`: Retrieved string result
+2025-06-19 18:06:51,499 INFO:[CHUNK CREATION] Table `m_season`: Created 1 table chunk + 12 column chunks
+2025-06-19 18:06:51,499 INFO:[CHUNK CREATION] Processing table: m_season_team_players
+2025-06-19 18:06:51,505 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_season_team_players` LIMIT 3
+2025-06-19 18:06:51,508 INFO:[SAMPLE ROWS] Table `m_season_team_players`: Retrieved string result
+2025-06-19 18:06:51,508 INFO:[CHUNK CREATION] Table `m_season_team_players`: Created 1 table chunk + 13 column chunks
+2025-06-19 18:06:51,508 INFO:[CHUNK CREATION] Processing table: m_short_news
+2025-06-19 18:06:51,508 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_short_news` LIMIT 3
+2025-06-19 18:06:51,508 INFO:[SAMPLE ROWS] Table `m_short_news`: Retrieved string result
+2025-06-19 18:06:51,508 INFO:[CHUNK CREATION] Table `m_short_news`: Created 1 table chunk + 17 column chunks
+2025-06-19 18:06:51,508 INFO:[CHUNK CREATION] Processing table: m_social
+2025-06-19 18:06:51,524 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_social` LIMIT 3
+2025-06-19 18:06:51,525 INFO:[SAMPLE ROWS] Table `m_social`: Retrieved string result
+2025-06-19 18:06:51,525 INFO:[CHUNK CREATION] Table `m_social`: Created 1 table chunk + 18 column chunks
+2025-06-19 18:06:51,525 INFO:[CHUNK CREATION] Processing table: m_social_provider
+2025-06-19 18:06:51,525 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_social_provider` LIMIT 3
+2025-06-19 18:06:51,525 INFO:[SAMPLE ROWS] Table `m_social_provider`: Retrieved string result
+2025-06-19 18:06:51,525 INFO:[CHUNK CREATION] Table `m_social_provider`: Created 1 table chunk + 14 column chunks
+2025-06-19 18:06:51,525 INFO:[CHUNK CREATION] Processing table: m_sponsors
+2025-06-19 18:06:51,543 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_sponsors` LIMIT 3
+2025-06-19 18:06:51,546 INFO:[SAMPLE ROWS] Table `m_sponsors`: Retrieved string result
+2025-06-19 18:06:51,546 INFO:[CHUNK CREATION] Table `m_sponsors`: Created 1 table chunk + 32 column chunks
+2025-06-19 18:06:51,546 INFO:[CHUNK CREATION] Processing table: m_streaming_recommended_video
+2025-06-19 18:06:51,552 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_streaming_recommended_video` LIMIT 3
+2025-06-19 18:06:51,553 INFO:[SAMPLE ROWS] Table `m_streaming_recommended_video`: Retrieved string result
+2025-06-19 18:06:51,553 INFO:[CHUNK CREATION] Table `m_streaming_recommended_video`: Created 1 table chunk + 19 column chunks
+2025-06-19 18:06:51,555 INFO:[CHUNK CREATION] Processing table: m_streaming_video
+2025-06-19 18:06:51,560 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_streaming_video` LIMIT 3
+2025-06-19 18:06:51,560 INFO:[SAMPLE ROWS] Table `m_streaming_video`: Retrieved string result
+2025-06-19 18:06:51,560 INFO:[CHUNK CREATION] Table `m_streaming_video`: Created 1 table chunk + 21 column chunks
+2025-06-19 18:06:51,560 INFO:[CHUNK CREATION] Processing table: m_student_payment_status
+2025-06-19 18:06:51,573 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_student_payment_status` LIMIT 3
+2025-06-19 18:06:51,575 INFO:[SAMPLE ROWS] Table `m_student_payment_status`: Retrieved string result
+2025-06-19 18:06:51,575 INFO:[CHUNK CREATION] Table `m_student_payment_status`: Created 1 table chunk + 33 column chunks
+2025-06-19 18:06:51,575 INFO:[CHUNK CREATION] Processing table: m_sub_menu
+2025-06-19 18:06:51,580 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_sub_menu` LIMIT 3
+2025-06-19 18:06:51,580 INFO:[SAMPLE ROWS] Table `m_sub_menu`: Retrieved string result
+2025-06-19 18:06:51,580 INFO:[CHUNK CREATION] Table `m_sub_menu`: Created 1 table chunk + 17 column chunks
+2025-06-19 18:06:51,580 INFO:[CHUNK CREATION] Processing table: m_submenu_role_mapping
+2025-06-19 18:06:51,591 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_submenu_role_mapping` LIMIT 3
+2025-06-19 18:06:51,593 INFO:[SAMPLE ROWS] Table `m_submenu_role_mapping`: Retrieved string result
+2025-06-19 18:06:51,593 INFO:[CHUNK CREATION] Table `m_submenu_role_mapping`: Created 1 table chunk + 16 column chunks
+2025-06-19 18:06:51,593 INFO:[CHUNK CREATION] Processing table: m_superart
+2025-06-19 18:06:51,600 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_superart` LIMIT 3
+2025-06-19 18:06:51,601 INFO:[SAMPLE ROWS] Table `m_superart`: Retrieved string result
+2025-06-19 18:06:51,601 INFO:[CHUNK CREATION] Table `m_superart`: Created 1 table chunk + 22 column chunks
+2025-06-19 18:06:51,602 INFO:[CHUNK CREATION] Processing table: m_tags
+2025-06-19 18:06:51,609 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_tags` LIMIT 3
+2025-06-19 18:06:51,610 INFO:[SAMPLE ROWS] Table `m_tags`: Retrieved string result
+2025-06-19 18:06:51,611 INFO:[CHUNK CREATION] Table `m_tags`: Created 1 table chunk + 14 column chunks
+2025-06-19 18:06:51,611 INFO:[CHUNK CREATION] Processing table: m_team
+2025-06-19 18:06:51,616 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_team` LIMIT 3
+2025-06-19 18:06:51,616 INFO:[SAMPLE ROWS] Table `m_team`: Retrieved string result
+2025-06-19 18:06:51,616 INFO:[CHUNK CREATION] Table `m_team`: Created 1 table chunk + 19 column chunks
+2025-06-19 18:06:51,616 INFO:[CHUNK CREATION] Processing table: m_team_highlights
+2025-06-19 18:06:51,629 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_team_highlights` LIMIT 3
+2025-06-19 18:06:51,629 INFO:[SAMPLE ROWS] Table `m_team_highlights`: Retrieved string result
+2025-06-19 18:06:51,629 INFO:[CHUNK CREATION] Table `m_team_highlights`: Created 1 table chunk + 15 column chunks
+2025-06-19 18:06:51,629 INFO:[CHUNK CREATION] Processing table: m_team_updates
+2025-06-19 18:06:51,636 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_team_updates` LIMIT 3
+2025-06-19 18:06:51,637 INFO:[SAMPLE ROWS] Table `m_team_updates`: Retrieved string result
+2025-06-19 18:06:51,638 INFO:[CHUNK CREATION] Table `m_team_updates`: Created 1 table chunk + 13 column chunks
+2025-06-19 18:06:51,638 INFO:[CHUNK CREATION] Processing table: m_templates
+2025-06-19 18:06:51,644 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_templates` LIMIT 3
+2025-06-19 18:06:51,644 INFO:[SAMPLE ROWS] Table `m_templates`: Retrieved string result
+2025-06-19 18:06:51,644 INFO:[CHUNK CREATION] Table `m_templates`: Created 1 table chunk + 18 column chunks
+2025-06-19 18:06:51,644 INFO:[CHUNK CREATION] Processing table: m_testauthor
+2025-06-19 18:06:51,653 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_testauthor` LIMIT 3
+2025-06-19 18:06:51,655 INFO:[SAMPLE ROWS] Table `m_testauthor`: Retrieved string result
+2025-06-19 18:06:51,655 INFO:[CHUNK CREATION] Table `m_testauthor`: Created 1 table chunk + 14 column chunks
+2025-06-19 18:06:51,655 INFO:[CHUNK CREATION] Processing table: m_tickets
+2025-06-19 18:06:51,658 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_tickets` LIMIT 3
+2025-06-19 18:06:51,658 INFO:[SAMPLE ROWS] Table `m_tickets`: Retrieved string result
+2025-06-19 18:06:51,658 INFO:[CHUNK CREATION] Table `m_tickets`: Created 1 table chunk + 22 column chunks
+2025-06-19 18:06:51,658 INFO:[CHUNK CREATION] Processing table: m_tier
+2025-06-19 18:06:51,671 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_tier` LIMIT 3
+2025-06-19 18:06:51,673 INFO:[SAMPLE ROWS] Table `m_tier`: Retrieved string result
+2025-06-19 18:06:51,674 INFO:[CHUNK CREATION] Table `m_tier`: Created 1 table chunk + 15 column chunks
+2025-06-19 18:06:51,674 INFO:[CHUNK CREATION] Processing table: m_tweet_images
+2025-06-19 18:06:51,675 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_tweet_images` LIMIT 3
+2025-06-19 18:06:51,682 INFO:[SAMPLE ROWS] Table `m_tweet_images`: Retrieved string result
+2025-06-19 18:06:51,682 INFO:[CHUNK CREATION] Table `m_tweet_images`: Created 1 table chunk + 12 column chunks
+2025-06-19 18:06:51,682 INFO:[CHUNK CREATION] Processing table: m_tweets
+2025-06-19 18:06:51,691 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_tweets` LIMIT 3
+2025-06-19 18:06:51,693 INFO:[SAMPLE ROWS] Table `m_tweets`: Retrieved string result
+2025-06-19 18:06:51,693 INFO:[CHUNK CREATION] Table `m_tweets`: Created 1 table chunk + 26 column chunks
+2025-06-19 18:06:51,693 INFO:[CHUNK CREATION] Processing table: m_twitter_feeds
+2025-06-19 18:06:51,695 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_twitter_feeds` LIMIT 3
+2025-06-19 18:06:51,695 INFO:[SAMPLE ROWS] Table `m_twitter_feeds`: Retrieved string result
+2025-06-19 18:06:51,695 INFO:[CHUNK CREATION] Table `m_twitter_feeds`: Created 1 table chunk + 13 column chunks
+2025-06-19 18:06:51,695 INFO:[CHUNK CREATION] Processing table: m_user
+2025-06-19 18:06:51,710 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_user` LIMIT 3
+2025-06-19 18:06:51,710 INFO:[SAMPLE ROWS] Table `m_user`: Retrieved string result
+2025-06-19 18:06:51,710 INFO:[CHUNK CREATION] Table `m_user`: Created 1 table chunk + 43 column chunks
+2025-06-19 18:06:51,710 INFO:[CHUNK CREATION] Processing table: m_user_address
+2025-06-19 18:06:51,723 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_user_address` LIMIT 3
+2025-06-19 18:06:51,724 INFO:[SAMPLE ROWS] Table `m_user_address`: Retrieved string result
+2025-06-19 18:06:51,726 INFO:[CHUNK CREATION] Table `m_user_address`: Created 1 table chunk + 12 column chunks
+2025-06-19 18:06:51,726 INFO:[CHUNK CREATION] Processing table: m_user_admin
+2025-06-19 18:06:51,732 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_user_admin` LIMIT 3
+2025-06-19 18:06:51,734 INFO:[SAMPLE ROWS] Table `m_user_admin`: Retrieved string result
+2025-06-19 18:06:51,734 INFO:[CHUNK CREATION] Table `m_user_admin`: Created 1 table chunk + 25 column chunks
+2025-06-19 18:06:51,734 INFO:[CHUNK CREATION] Processing table: m_user_migrated
+2025-06-19 18:06:51,741 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_user_migrated` LIMIT 3
+2025-06-19 18:06:51,743 INFO:[SAMPLE ROWS] Table `m_user_migrated`: Retrieved string result
+2025-06-19 18:06:51,743 INFO:[CHUNK CREATION] Table `m_user_migrated`: Created 1 table chunk + 22 column chunks
+2025-06-19 18:06:51,743 INFO:[CHUNK CREATION] Processing table: m_user_persona_mapping
+2025-06-19 18:06:51,743 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_user_persona_mapping` LIMIT 3
+2025-06-19 18:06:51,743 INFO:[SAMPLE ROWS] Table `m_user_persona_mapping`: Retrieved string result
+2025-06-19 18:06:51,743 INFO:[CHUNK CREATION] Table `m_user_persona_mapping`: Created 1 table chunk + 8 column chunks
+2025-06-19 18:06:51,743 INFO:[CHUNK CREATION] Processing table: m_user_personal_mapping
+2025-06-19 18:06:51,758 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_user_personal_mapping` LIMIT 3
+2025-06-19 18:06:51,758 INFO:[SAMPLE ROWS] Table `m_user_personal_mapping`: Retrieved string result
+2025-06-19 18:06:51,758 INFO:[CHUNK CREATION] Table `m_user_personal_mapping`: Created 1 table chunk + 10 column chunks
+2025-06-19 18:06:51,758 INFO:[CHUNK CREATION] Processing table: m_user_preferences
+2025-06-19 18:06:51,767 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_user_preferences` LIMIT 3
+2025-06-19 18:06:51,768 INFO:[SAMPLE ROWS] Table `m_user_preferences`: Retrieved string result
+2025-06-19 18:06:51,768 INFO:[CHUNK CREATION] Table `m_user_preferences`: Created 1 table chunk + 16 column chunks
+2025-06-19 18:06:51,768 INFO:[CHUNK CREATION] Processing table: m_user_profile
+2025-06-19 18:06:51,778 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_user_profile` LIMIT 3
+2025-06-19 18:06:51,780 INFO:[SAMPLE ROWS] Table `m_user_profile`: Retrieved string result
+2025-06-19 18:06:51,780 INFO:[CHUNK CREATION] Table `m_user_profile`: Created 1 table chunk + 26 column chunks
+2025-06-19 18:06:51,780 INFO:[CHUNK CREATION] Processing table: m_user_profile_migrated
+2025-06-19 18:06:51,782 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_user_profile_migrated` LIMIT 3
+2025-06-19 18:06:51,789 INFO:[SAMPLE ROWS] Table `m_user_profile_migrated`: Retrieved string result
+2025-06-19 18:06:51,789 INFO:[CHUNK CREATION] Table `m_user_profile_migrated`: Created 1 table chunk + 22 column chunks
+2025-06-19 18:06:51,789 INFO:[CHUNK CREATION] Processing table: m_user_restaurant
+2025-06-19 18:06:51,796 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_user_restaurant` LIMIT 3
+2025-06-19 18:06:51,797 INFO:[SAMPLE ROWS] Table `m_user_restaurant`: Retrieved string result
+2025-06-19 18:06:51,797 INFO:[CHUNK CREATION] Table `m_user_restaurant`: Created 1 table chunk + 9 column chunks
+2025-06-19 18:06:51,797 INFO:[CHUNK CREATION] Processing table: m_user_roles
+2025-06-19 18:06:51,803 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_user_roles` LIMIT 3
+2025-06-19 18:06:51,806 INFO:[SAMPLE ROWS] Table `m_user_roles`: Retrieved string result
+2025-06-19 18:06:51,806 INFO:[CHUNK CREATION] Table `m_user_roles`: Created 1 table chunk + 16 column chunks
+2025-06-19 18:06:51,806 INFO:[CHUNK CREATION] Processing table: m_user_type
+2025-06-19 18:06:51,811 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_user_type` LIMIT 3
+2025-06-19 18:06:51,811 INFO:[SAMPLE ROWS] Table `m_user_type`: Retrieved string result
+2025-06-19 18:06:51,811 INFO:[CHUNK CREATION] Table `m_user_type`: Created 1 table chunk + 11 column chunks
+2025-06-19 18:06:51,811 INFO:[CHUNK CREATION] Processing table: m_video
+2025-06-19 18:06:51,823 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_video` LIMIT 3
+2025-06-19 18:06:51,824 INFO:[SAMPLE ROWS] Table `m_video`: Retrieved string result
+2025-06-19 18:06:51,824 INFO:[CHUNK CREATION] Table `m_video`: Created 1 table chunk + 29 column chunks
+2025-06-19 18:06:51,827 INFO:[CHUNK CREATION] Processing table: m_webcard
+2025-06-19 18:06:51,827 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_webcard` LIMIT 3
+2025-06-19 18:06:51,827 INFO:[SAMPLE ROWS] Table `m_webcard`: Retrieved string result
+2025-06-19 18:06:51,827 INFO:[CHUNK CREATION] Table `m_webcard`: Created 1 table chunk + 19 column chunks
+2025-06-19 18:06:51,827 INFO:[CHUNK CREATION] Processing table: m_whistle_count
+2025-06-19 18:06:51,840 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_whistle_count` LIMIT 3
+2025-06-19 18:06:51,841 INFO:[SAMPLE ROWS] Table `m_whistle_count`: Retrieved string result
+2025-06-19 18:06:51,841 INFO:[CHUNK CREATION] Table `m_whistle_count`: Created 1 table chunk + 7 column chunks
+2025-06-19 18:06:51,843 INFO:[CHUNK CREATION] Processing table: m_year
+2025-06-19 18:06:51,843 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_year` LIMIT 3
+2025-06-19 18:06:51,843 INFO:[SAMPLE ROWS] Table `m_year`: Retrieved string result
+2025-06-19 18:06:51,843 INFO:[CHUNK CREATION] Table `m_year`: Created 1 table chunk + 12 column chunks
+2025-06-19 18:06:51,843 INFO:[CHUNK CREATION] Processing table: m_yellove_wall
+2025-06-19 18:06:51,858 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `m_yellove_wall` LIMIT 3
+2025-06-19 18:06:51,858 INFO:[SAMPLE ROWS] Table `m_yellove_wall`: Retrieved string result
+2025-06-19 18:06:51,860 INFO:[CHUNK CREATION] Table `m_yellove_wall`: Created 1 table chunk + 19 column chunks
+2025-06-19 18:06:51,860 INFO:[CHUNK CREATION] Processing table: magentouser
+2025-06-19 18:06:51,860 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `magentouser` LIMIT 3
+2025-06-19 18:06:51,860 INFO:[SAMPLE ROWS] Table `magentouser`: Retrieved string result
+2025-06-19 18:06:51,860 INFO:[CHUNK CREATION] Table `magentouser`: Created 1 table chunk + 15 column chunks
+2025-06-19 18:06:51,860 INFO:[CHUNK CREATION] Processing table: mailids
+2025-06-19 18:06:51,873 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `mailids` LIMIT 3
+2025-06-19 18:06:51,874 INFO:[SAMPLE ROWS] Table `mailids`: Retrieved string result
+2025-06-19 18:06:51,874 INFO:[CHUNK CREATION] Table `mailids`: Created 1 table chunk + 5 column chunks
+2025-06-19 18:06:51,874 INFO:[CHUNK CREATION] Processing table: manual-fee-invoices
+2025-06-19 18:06:51,877 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `manual-fee-invoices` LIMIT 3
+2025-06-19 18:06:51,877 INFO:[SAMPLE ROWS] Table `manual-fee-invoices`: Retrieved string result
+2025-06-19 18:06:51,877 INFO:[CHUNK CREATION] Table `manual-fee-invoices`: Created 1 table chunk + 33 column chunks
+2025-06-19 18:06:51,877 INFO:[CHUNK CREATION] Processing table: manual-invoice-gst
+2025-06-19 18:06:51,894 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `manual-invoice-gst` LIMIT 3
+2025-06-19 18:06:51,894 INFO:[SAMPLE ROWS] Table `manual-invoice-gst`: Retrieved string result
+2025-06-19 18:06:51,894 INFO:[CHUNK CREATION] Table `manual-invoice-gst`: Created 1 table chunk + 22 column chunks
+2025-06-19 18:06:51,894 INFO:[CHUNK CREATION] Processing table: manual_invoice_matrix_bkup_on_oct13
+2025-06-19 18:06:51,903 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `manual_invoice_matrix_bkup_on_oct13` LIMIT 3
+2025-06-19 18:06:51,905 INFO:[SAMPLE ROWS] Table `manual_invoice_matrix_bkup_on_oct13`: Retrieved string result
+2025-06-19 18:06:51,906 INFO:[CHUNK CREATION] Table `manual_invoice_matrix_bkup_on_oct13`: Created 1 table chunk + 28 column chunks
+2025-06-19 18:06:51,906 INFO:[CHUNK CREATION] Processing table: manual_invoices_matrix
+2025-06-19 18:06:51,909 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `manual_invoices_matrix` LIMIT 3
+2025-06-19 18:06:51,909 INFO:[SAMPLE ROWS] Table `manual_invoices_matrix`: Retrieved string result
+2025-06-19 18:06:51,909 INFO:[CHUNK CREATION] Table `manual_invoices_matrix`: Created 1 table chunk + 28 column chunks
+2025-06-19 18:06:51,909 INFO:[CHUNK CREATION] Processing table: manual_invoices_matrix339
+2025-06-19 18:06:51,924 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `manual_invoices_matrix339` LIMIT 3
+2025-06-19 18:06:51,924 INFO:[SAMPLE ROWS] Table `manual_invoices_matrix339`: Retrieved string result
+2025-06-19 18:06:51,924 INFO:[CHUNK CREATION] Table `manual_invoices_matrix339`: Created 1 table chunk + 27 column chunks
+2025-06-19 18:06:51,924 INFO:[CHUNK CREATION] Processing table: manual_invoices_tillapr26
+2025-06-19 18:06:51,934 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `manual_invoices_tillapr26` LIMIT 3
+2025-06-19 18:06:51,935 INFO:[SAMPLE ROWS] Table `manual_invoices_tillapr26`: Retrieved string result
+2025-06-19 18:06:51,935 INFO:[CHUNK CREATION] Table `manual_invoices_tillapr26`: Created 1 table chunk + 27 column chunks
+2025-06-19 18:06:51,935 INFO:[CHUNK CREATION] Processing table: matchlog
+2025-06-19 18:06:51,944 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `matchlog` LIMIT 3
+2025-06-19 18:06:51,946 INFO:[SAMPLE ROWS] Table `matchlog`: Retrieved string result
+2025-06-19 18:06:51,946 INFO:[CHUNK CREATION] Table `matchlog`: Created 1 table chunk + 25 column chunks
+2025-06-19 18:06:51,946 INFO:[CHUNK CREATION] Processing table: newsdigest
+2025-06-19 18:06:51,954 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `newsdigest` LIMIT 3
+2025-06-19 18:06:51,955 INFO:[SAMPLE ROWS] Table `newsdigest`: Retrieved string result
+2025-06-19 18:06:51,955 INFO:[CHUNK CREATION] Table `newsdigest`: Created 1 table chunk + 16 column chunks
+2025-06-19 18:06:51,957 INFO:[CHUNK CREATION] Processing table: notification
+2025-06-19 18:06:51,958 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `notification` LIMIT 3
+2025-06-19 18:06:51,958 INFO:[SAMPLE ROWS] Table `notification`: Retrieved string result
+2025-06-19 18:06:51,958 INFO:[CHUNK CREATION] Table `notification`: Created 1 table chunk + 18 column chunks
+2025-06-19 18:06:51,958 INFO:[CHUNK CREATION] Processing table: onlyweb
+2025-06-19 18:06:51,975 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `onlyweb` LIMIT 3
+2025-06-19 18:06:51,977 INFO:[SAMPLE ROWS] Table `onlyweb`: Retrieved string result
+2025-06-19 18:06:51,977 INFO:[CHUNK CREATION] Table `onlyweb`: Created 1 table chunk + 28 column chunks
+2025-06-19 18:06:51,977 INFO:[CHUNK CREATION] Processing table: participant
+2025-06-19 18:06:51,984 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `participant` LIMIT 3
+2025-06-19 18:06:51,985 INFO:[SAMPLE ROWS] Table `participant`: Retrieved string result
+2025-06-19 18:06:51,985 INFO:[CHUNK CREATION] Table `participant`: Created 1 table chunk + 11 column chunks
+2025-06-19 18:06:51,985 INFO:[CHUNK CREATION] Processing table: payment_transaction
+2025-06-19 18:06:51,996 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `payment_transaction` LIMIT 3
+2025-06-19 18:06:51,999 INFO:[SAMPLE ROWS] Table `payment_transaction`: Retrieved string result
+2025-06-19 18:06:51,999 INFO:[CHUNK CREATION] Table `payment_transaction`: Created 1 table chunk + 41 column chunks
+2025-06-19 18:06:51,999 INFO:[CHUNK CREATION] Processing table: payment_transactions
+2025-06-19 18:06:52,009 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `payment_transactions` LIMIT 3
+2025-06-19 18:06:52,011 INFO:[SAMPLE ROWS] Table `payment_transactions`: Retrieved string result
+2025-06-19 18:06:52,011 INFO:[CHUNK CREATION] Table `payment_transactions`: Created 1 table chunk + 49 column chunks
+2025-06-19 18:06:52,011 INFO:[CHUNK CREATION] Processing table: paymentlog
+2025-06-19 18:06:52,015 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `paymentlog` LIMIT 3
+2025-06-19 18:06:52,015 INFO:[SAMPLE ROWS] Table `paymentlog`: Retrieved string result
+2025-06-19 18:06:52,015 INFO:[CHUNK CREATION] Table `paymentlog`: Created 1 table chunk + 18 column chunks
+2025-06-19 18:06:52,015 INFO:[CHUNK CREATION] Processing table: payslips
+2025-06-19 18:06:52,028 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `payslips` LIMIT 3
+2025-06-19 18:06:52,030 INFO:[SAMPLE ROWS] Table `payslips`: Retrieved string result
+2025-06-19 18:06:52,030 INFO:[CHUNK CREATION] Table `payslips`: Created 1 table chunk + 20 column chunks
+2025-06-19 18:06:52,030 INFO:[CHUNK CREATION] Processing table: permissionmapping
+2025-06-19 18:06:52,036 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `permissionmapping` LIMIT 3
+2025-06-19 18:06:52,039 INFO:[SAMPLE ROWS] Table `permissionmapping`: Retrieved string result
+2025-06-19 18:06:52,039 INFO:[CHUNK CREATION] Table `permissionmapping`: Created 1 table chunk + 11 column chunks
+2025-06-19 18:06:52,039 INFO:[CHUNK CREATION] Processing table: persons
+2025-06-19 18:06:52,042 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `persons` LIMIT 3
+2025-06-19 18:06:52,042 INFO:[SAMPLE ROWS] Table `persons`: Retrieved string result
+2025-06-19 18:06:52,042 INFO:[CHUNK CREATION] Table `persons`: Created 1 table chunk + 9 column chunks
+2025-06-19 18:06:52,042 INFO:[CHUNK CREATION] Processing table: pls_chk_invalid_invoice
+2025-06-19 18:06:52,057 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `pls_chk_invalid_invoice` LIMIT 3
+2025-06-19 18:06:52,058 INFO:[SAMPLE ROWS] Table `pls_chk_invalid_invoice`: Retrieved string result
+2025-06-19 18:06:52,058 INFO:[CHUNK CREATION] Table `pls_chk_invalid_invoice`: Created 1 table chunk + 52 column chunks
+2025-06-19 18:06:52,058 INFO:[CHUNK CREATION] Processing table: pls_chk_invalid_payment
+2025-06-19 18:06:52,069 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `pls_chk_invalid_payment` LIMIT 3
+2025-06-19 18:06:52,069 INFO:[SAMPLE ROWS] Table `pls_chk_invalid_payment`: Retrieved string result
+2025-06-19 18:06:52,069 INFO:[CHUNK CREATION] Table `pls_chk_invalid_payment`: Created 1 table chunk + 38 column chunks
+2025-06-19 18:06:52,069 INFO:[CHUNK CREATION] Processing table: pricing
+2025-06-19 18:06:52,074 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `pricing` LIMIT 3
+2025-06-19 18:06:52,074 INFO:[SAMPLE ROWS] Table `pricing`: Retrieved string result
+2025-06-19 18:06:52,074 INFO:[CHUNK CREATION] Table `pricing`: Created 1 table chunk + 22 column chunks
+2025-06-19 18:06:52,074 INFO:[CHUNK CREATION] Processing table: product
+2025-06-19 18:06:52,089 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `product` LIMIT 3
+2025-06-19 18:06:52,091 INFO:[SAMPLE ROWS] Table `product`: Retrieved string result
+2025-06-19 18:06:52,091 INFO:[CHUNK CREATION] Table `product`: Created 1 table chunk + 15 column chunks
+2025-06-19 18:06:52,091 INFO:[CHUNK CREATION] Processing table: regional
+2025-06-19 18:06:52,093 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `regional` LIMIT 3
+2025-06-19 18:06:52,093 INFO:[SAMPLE ROWS] Table `regional`: Retrieved string result
+2025-06-19 18:06:52,093 INFO:[CHUNK CREATION] Table `regional`: Created 1 table chunk + 13 column chunks
+2025-06-19 18:06:52,093 INFO:[CHUNK CREATION] Processing table: regularfeesmatrix
+2025-06-19 18:06:52,109 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `regularfeesmatrix` LIMIT 3
+2025-06-19 18:06:52,111 INFO:[SAMPLE ROWS] Table `regularfeesmatrix`: Retrieved string result
+2025-06-19 18:06:52,112 INFO:[CHUNK CREATION] Table `regularfeesmatrix`: Created 1 table chunk + 28 column chunks
+2025-06-19 18:06:52,112 INFO:[CHUNK CREATION] Processing table: regularfeesmatrix2
+2025-06-19 18:06:52,117 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `regularfeesmatrix2` LIMIT 3
+2025-06-19 18:06:52,121 INFO:[SAMPLE ROWS] Table `regularfeesmatrix2`: Retrieved string result
+2025-06-19 18:06:52,121 INFO:[CHUNK CREATION] Table `regularfeesmatrix2`: Created 1 table chunk + 28 column chunks
+2025-06-19 18:06:52,121 INFO:[CHUNK CREATION] Processing table: regularfeesmatrixapr23
+2025-06-19 18:06:52,131 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `regularfeesmatrixapr23` LIMIT 3
+2025-06-19 18:06:52,133 INFO:[SAMPLE ROWS] Table `regularfeesmatrixapr23`: Retrieved string result
+2025-06-19 18:06:52,133 INFO:[CHUNK CREATION] Table `regularfeesmatrixapr23`: Created 1 table chunk + 28 column chunks
+2025-06-19 18:06:52,133 INFO:[CHUNK CREATION] Processing table: regularfeesmatrixapr23_addl
+2025-06-19 18:06:52,143 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `regularfeesmatrixapr23_addl` LIMIT 3
+2025-06-19 18:06:52,145 INFO:[SAMPLE ROWS] Table `regularfeesmatrixapr23_addl`: Retrieved string result
+2025-06-19 18:06:52,147 INFO:[CHUNK CREATION] Table `regularfeesmatrixapr23_addl`: Created 1 table chunk + 28 column chunks
+2025-06-19 18:06:52,147 INFO:[CHUNK CREATION] Processing table: regularfeesmatrixapr23_frmmarch23
+2025-06-19 18:06:52,158 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `regularfeesmatrixapr23_frmmarch23` LIMIT 3
+2025-06-19 18:06:52,160 INFO:[SAMPLE ROWS] Table `regularfeesmatrixapr23_frmmarch23`: Retrieved string result
+2025-06-19 18:06:52,160 INFO:[CHUNK CREATION] Table `regularfeesmatrixapr23_frmmarch23`: Created 1 table chunk + 28 column chunks
+2025-06-19 18:06:52,160 INFO:[CHUNK CREATION] Processing table: regularfeesmatrixapr24
+2025-06-19 18:06:52,172 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `regularfeesmatrixapr24` LIMIT 3
+2025-06-19 18:06:52,174 INFO:[SAMPLE ROWS] Table `regularfeesmatrixapr24`: Retrieved string result
+2025-06-19 18:06:52,174 INFO:[CHUNK CREATION] Table `regularfeesmatrixapr24`: Created 1 table chunk + 28 column chunks
+2025-06-19 18:06:52,175 INFO:[CHUNK CREATION] Processing table: regularfeesmatrixapr25
+2025-06-19 18:06:52,184 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `regularfeesmatrixapr25` LIMIT 3
+2025-06-19 18:06:52,188 INFO:[SAMPLE ROWS] Table `regularfeesmatrixapr25`: Retrieved string result
+2025-06-19 18:06:52,188 INFO:[CHUNK CREATION] Table `regularfeesmatrixapr25`: Created 1 table chunk + 28 column chunks
+2025-06-19 18:06:52,194 INFO:[CHUNK CREATION] Processing table: regularfeesmatrixaug23
+2025-06-19 18:06:52,204 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `regularfeesmatrixaug23` LIMIT 3
+2025-06-19 18:06:52,207 INFO:[SAMPLE ROWS] Table `regularfeesmatrixaug23`: Retrieved string result
+2025-06-19 18:06:52,207 INFO:[CHUNK CREATION] Table `regularfeesmatrixaug23`: Created 1 table chunk + 28 column chunks
+2025-06-19 18:06:52,210 INFO:[CHUNK CREATION] Processing table: regularfeesmatrixaug24
+2025-06-19 18:06:52,222 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `regularfeesmatrixaug24` LIMIT 3
+2025-06-19 18:06:52,225 INFO:[SAMPLE ROWS] Table `regularfeesmatrixaug24`: Retrieved string result
+2025-06-19 18:06:52,225 INFO:[CHUNK CREATION] Table `regularfeesmatrixaug24`: Created 1 table chunk + 28 column chunks
+2025-06-19 18:06:52,225 INFO:[CHUNK CREATION] Processing table: regularfeesmatrixaug24onoct24
+2025-06-19 18:06:52,233 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `regularfeesmatrixaug24onoct24` LIMIT 3
+2025-06-19 18:06:52,234 INFO:[SAMPLE ROWS] Table `regularfeesmatrixaug24onoct24`: Retrieved string result
+2025-06-19 18:06:52,234 INFO:[CHUNK CREATION] Table `regularfeesmatrixaug24onoct24`: Created 1 table chunk + 28 column chunks
+2025-06-19 18:06:52,234 INFO:[CHUNK CREATION] Processing table: regularfeesmatrixaug24today
+2025-06-19 18:06:52,242 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `regularfeesmatrixaug24today` LIMIT 3
+2025-06-19 18:06:52,242 INFO:[SAMPLE ROWS] Table `regularfeesmatrixaug24today`: Retrieved string result
+2025-06-19 18:06:52,242 INFO:[CHUNK CREATION] Table `regularfeesmatrixaug24today`: Created 1 table chunk + 28 column chunks
+2025-06-19 18:06:52,242 INFO:[CHUNK CREATION] Processing table: regularfeesmatrixdec
+2025-06-19 18:06:52,253 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `regularfeesmatrixdec` LIMIT 3
+2025-06-19 18:06:52,256 INFO:[SAMPLE ROWS] Table `regularfeesmatrixdec`: Retrieved string result
+2025-06-19 18:06:52,256 INFO:[CHUNK CREATION] Table `regularfeesmatrixdec`: Created 1 table chunk + 28 column chunks
+2025-06-19 18:06:52,256 INFO:[CHUNK CREATION] Processing table: regularfeesmatrixdec23
+2025-06-19 18:06:52,259 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `regularfeesmatrixdec23` LIMIT 3
+2025-06-19 18:06:52,259 INFO:[SAMPLE ROWS] Table `regularfeesmatrixdec23`: Retrieved string result
+2025-06-19 18:06:52,259 INFO:[CHUNK CREATION] Table `regularfeesmatrixdec23`: Created 1 table chunk + 28 column chunks
+2025-06-19 18:06:52,259 INFO:[CHUNK CREATION] Processing table: regularfeesmatrixdec24
+2025-06-19 18:06:52,274 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `regularfeesmatrixdec24` LIMIT 3
+2025-06-19 18:06:52,274 INFO:[SAMPLE ROWS] Table `regularfeesmatrixdec24`: Retrieved string result
+2025-06-19 18:06:52,274 INFO:[CHUNK CREATION] Table `regularfeesmatrixdec24`: Created 1 table chunk + 28 column chunks
+2025-06-19 18:06:52,274 INFO:[CHUNK CREATION] Processing table: regularfeesmatrixfeb
+2025-06-19 18:06:52,284 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `regularfeesmatrixfeb` LIMIT 3
+2025-06-19 18:06:52,286 INFO:[SAMPLE ROWS] Table `regularfeesmatrixfeb`: Retrieved string result
+2025-06-19 18:06:52,286 INFO:[CHUNK CREATION] Table `regularfeesmatrixfeb`: Created 1 table chunk + 28 column chunks
+2025-06-19 18:06:52,286 INFO:[CHUNK CREATION] Processing table: regularfeesmatrixfeb24
+2025-06-19 18:06:52,292 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `regularfeesmatrixfeb24` LIMIT 3
+2025-06-19 18:06:52,292 INFO:[SAMPLE ROWS] Table `regularfeesmatrixfeb24`: Retrieved string result
+2025-06-19 18:06:52,292 INFO:[CHUNK CREATION] Table `regularfeesmatrixfeb24`: Created 1 table chunk + 28 column chunks
+2025-06-19 18:06:52,292 INFO:[CHUNK CREATION] Processing table: regularfeesmatrixfeb25
+2025-06-19 18:06:52,306 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `regularfeesmatrixfeb25` LIMIT 3
+2025-06-19 18:06:52,309 INFO:[SAMPLE ROWS] Table `regularfeesmatrixfeb25`: Retrieved string result
+2025-06-19 18:06:52,309 INFO:[CHUNK CREATION] Table `regularfeesmatrixfeb25`: Created 1 table chunk + 25 column chunks
+2025-06-19 18:06:52,309 INFO:[CHUNK CREATION] Processing table: regularfeesmatrixjan
+2025-06-19 18:06:52,309 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `regularfeesmatrixjan` LIMIT 3
+2025-06-19 18:06:52,309 INFO:[SAMPLE ROWS] Table `regularfeesmatrixjan`: Retrieved string result
+2025-06-19 18:06:52,309 INFO:[CHUNK CREATION] Table `regularfeesmatrixjan`: Created 1 table chunk + 28 column chunks
+2025-06-19 18:06:52,309 INFO:[CHUNK CREATION] Processing table: regularfeesmatrixjan24
+2025-06-19 18:06:52,326 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `regularfeesmatrixjan24` LIMIT 3
+2025-06-19 18:06:52,326 INFO:[SAMPLE ROWS] Table `regularfeesmatrixjan24`: Retrieved string result
+2025-06-19 18:06:52,326 INFO:[CHUNK CREATION] Table `regularfeesmatrixjan24`: Created 1 table chunk + 28 column chunks
+2025-06-19 18:06:52,326 INFO:[CHUNK CREATION] Processing table: regularfeesmatrixjan25
+2025-06-19 18:06:52,336 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `regularfeesmatrixjan25` LIMIT 3
+2025-06-19 18:06:52,338 INFO:[SAMPLE ROWS] Table `regularfeesmatrixjan25`: Retrieved string result
+2025-06-19 18:06:52,339 INFO:[CHUNK CREATION] Table `regularfeesmatrixjan25`: Created 1 table chunk + 28 column chunks
+2025-06-19 18:06:52,339 INFO:[CHUNK CREATION] Processing table: regularfeesmatrixjul23
+2025-06-19 18:06:52,340 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `regularfeesmatrixjul23` LIMIT 3
+2025-06-19 18:06:52,340 INFO:[SAMPLE ROWS] Table `regularfeesmatrixjul23`: Retrieved string result
+2025-06-19 18:06:52,340 INFO:[CHUNK CREATION] Table `regularfeesmatrixjul23`: Created 1 table chunk + 28 column chunks
+2025-06-19 18:06:52,340 INFO:[CHUNK CREATION] Processing table: regularfeesmatrixjul24
+2025-06-19 18:06:52,357 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `regularfeesmatrixjul24` LIMIT 3
+2025-06-19 18:06:52,359 INFO:[SAMPLE ROWS] Table `regularfeesmatrixjul24`: Retrieved string result
+2025-06-19 18:06:52,359 INFO:[CHUNK CREATION] Table `regularfeesmatrixjul24`: Created 1 table chunk + 28 column chunks
+2025-06-19 18:06:52,359 INFO:[CHUNK CREATION] Processing table: regularfeesmatrixjun23
+2025-06-19 18:06:52,367 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `regularfeesmatrixjun23` LIMIT 3
+2025-06-19 18:06:52,369 INFO:[SAMPLE ROWS] Table `regularfeesmatrixjun23`: Retrieved string result
+2025-06-19 18:06:52,369 INFO:[CHUNK CREATION] Table `regularfeesmatrixjun23`: Created 1 table chunk + 28 column chunks
+2025-06-19 18:06:52,369 INFO:[CHUNK CREATION] Processing table: regularfeesmatrixjun23onlyfee
+2025-06-19 18:06:52,379 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `regularfeesmatrixjun23onlyfee` LIMIT 3
+2025-06-19 18:06:52,381 INFO:[SAMPLE ROWS] Table `regularfeesmatrixjun23onlyfee`: Retrieved string result
+2025-06-19 18:06:52,381 INFO:[CHUNK CREATION] Table `regularfeesmatrixjun23onlyfee`: Created 1 table chunk + 28 column chunks
+2025-06-19 18:06:52,381 INFO:[CHUNK CREATION] Processing table: regularfeesmatrixjun24
+2025-06-19 18:06:52,389 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `regularfeesmatrixjun24` LIMIT 3
+2025-06-19 18:06:52,391 INFO:[SAMPLE ROWS] Table `regularfeesmatrixjun24`: Retrieved string result
+2025-06-19 18:06:52,392 INFO:[CHUNK CREATION] Table `regularfeesmatrixjun24`: Created 1 table chunk + 28 column chunks
+2025-06-19 18:06:52,392 INFO:[CHUNK CREATION] Processing table: regularfeesmatrixmar23
+2025-06-19 18:06:52,399 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `regularfeesmatrixmar23` LIMIT 3
+2025-06-19 18:06:52,399 INFO:[SAMPLE ROWS] Table `regularfeesmatrixmar23`: Retrieved string result
+2025-06-19 18:06:52,399 INFO:[CHUNK CREATION] Table `regularfeesmatrixmar23`: Created 1 table chunk + 28 column chunks
+2025-06-19 18:06:52,399 INFO:[CHUNK CREATION] Processing table: regularfeesmatrixmar24
+2025-06-19 18:06:52,411 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `regularfeesmatrixmar24` LIMIT 3
+2025-06-19 18:06:52,411 INFO:[SAMPLE ROWS] Table `regularfeesmatrixmar24`: Retrieved string result
+2025-06-19 18:06:52,411 INFO:[CHUNK CREATION] Table `regularfeesmatrixmar24`: Created 1 table chunk + 28 column chunks
+2025-06-19 18:06:52,411 INFO:[CHUNK CREATION] Processing table: regularfeesmatrixmar25
+2025-06-19 18:06:52,421 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `regularfeesmatrixmar25` LIMIT 3
+2025-06-19 18:06:52,423 INFO:[SAMPLE ROWS] Table `regularfeesmatrixmar25`: Retrieved string result
+2025-06-19 18:06:52,424 INFO:[CHUNK CREATION] Table `regularfeesmatrixmar25`: Created 1 table chunk + 28 column chunks
+2025-06-19 18:06:52,424 INFO:[CHUNK CREATION] Processing table: regularfeesmatrixmay23
+2025-06-19 18:06:52,428 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `regularfeesmatrixmay23` LIMIT 3
+2025-06-19 18:06:52,428 INFO:[SAMPLE ROWS] Table `regularfeesmatrixmay23`: Retrieved string result
+2025-06-19 18:06:52,428 INFO:[CHUNK CREATION] Table `regularfeesmatrixmay23`: Created 1 table chunk + 28 column chunks
+2025-06-19 18:06:52,428 INFO:[CHUNK CREATION] Processing table: regularfeesmatrixmay24
+2025-06-19 18:06:52,441 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `regularfeesmatrixmay24` LIMIT 3
+2025-06-19 18:06:52,443 INFO:[SAMPLE ROWS] Table `regularfeesmatrixmay24`: Retrieved string result
+2025-06-19 18:06:52,443 INFO:[CHUNK CREATION] Table `regularfeesmatrixmay24`: Created 1 table chunk + 25 column chunks
+2025-06-19 18:06:52,443 INFO:[CHUNK CREATION] Processing table: regularfeesmatrixnew
+2025-06-19 18:06:52,443 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `regularfeesmatrixnew` LIMIT 3
+2025-06-19 18:06:52,443 INFO:[SAMPLE ROWS] Table `regularfeesmatrixnew`: Retrieved string result
+2025-06-19 18:06:52,443 INFO:[CHUNK CREATION] Table `regularfeesmatrixnew`: Created 1 table chunk + 28 column chunks
+2025-06-19 18:06:52,443 INFO:[CHUNK CREATION] Processing table: regularfeesmatrixnov
+2025-06-19 18:06:52,462 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `regularfeesmatrixnov` LIMIT 3
+2025-06-19 18:06:52,462 INFO:[SAMPLE ROWS] Table `regularfeesmatrixnov`: Retrieved string result
+2025-06-19 18:06:52,462 INFO:[CHUNK CREATION] Table `regularfeesmatrixnov`: Created 1 table chunk + 28 column chunks
+2025-06-19 18:06:52,462 INFO:[CHUNK CREATION] Processing table: regularfeesmatrixnov23
+2025-06-19 18:06:52,472 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `regularfeesmatrixnov23` LIMIT 3
+2025-06-19 18:06:52,475 INFO:[SAMPLE ROWS] Table `regularfeesmatrixnov23`: Retrieved string result
+2025-06-19 18:06:52,475 INFO:[CHUNK CREATION] Table `regularfeesmatrixnov23`: Created 1 table chunk + 28 column chunks
+2025-06-19 18:06:52,475 INFO:[CHUNK CREATION] Processing table: regularfeesmatrixnov24
+2025-06-19 18:06:52,475 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `regularfeesmatrixnov24` LIMIT 3
+2025-06-19 18:06:52,475 INFO:[SAMPLE ROWS] Table `regularfeesmatrixnov24`: Retrieved string result
+2025-06-19 18:06:52,475 INFO:[CHUNK CREATION] Table `regularfeesmatrixnov24`: Created 1 table chunk + 28 column chunks
+2025-06-19 18:06:52,475 INFO:[CHUNK CREATION] Processing table: regularfeesmatrixoct23
+2025-06-19 18:06:52,495 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `regularfeesmatrixoct23` LIMIT 3
+2025-06-19 18:06:52,497 INFO:[SAMPLE ROWS] Table `regularfeesmatrixoct23`: Retrieved string result
+2025-06-19 18:06:52,497 INFO:[CHUNK CREATION] Table `regularfeesmatrixoct23`: Created 1 table chunk + 28 column chunks
+2025-06-19 18:06:52,497 INFO:[CHUNK CREATION] Processing table: regularfeesmatrixoct23corr
+2025-06-19 18:06:52,506 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `regularfeesmatrixoct23corr` LIMIT 3
+2025-06-19 18:06:52,509 INFO:[SAMPLE ROWS] Table `regularfeesmatrixoct23corr`: Retrieved string result
+2025-06-19 18:06:52,509 INFO:[CHUNK CREATION] Table `regularfeesmatrixoct23corr`: Created 1 table chunk + 28 column chunks
+2025-06-19 18:06:52,509 INFO:[CHUNK CREATION] Processing table: regularfeesmatrixoct24
+2025-06-19 18:06:52,509 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `regularfeesmatrixoct24` LIMIT 3
+2025-06-19 18:06:52,509 INFO:[SAMPLE ROWS] Table `regularfeesmatrixoct24`: Retrieved string result
+2025-06-19 18:06:52,509 INFO:[CHUNK CREATION] Table `regularfeesmatrixoct24`: Created 1 table chunk + 28 column chunks
+2025-06-19 18:06:52,509 INFO:[CHUNK CREATION] Processing table: regularfeesmatrixsep23
+2025-06-19 18:06:52,526 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `regularfeesmatrixsep23` LIMIT 3
+2025-06-19 18:06:52,526 INFO:[SAMPLE ROWS] Table `regularfeesmatrixsep23`: Retrieved string result
+2025-06-19 18:06:52,526 INFO:[CHUNK CREATION] Table `regularfeesmatrixsep23`: Created 1 table chunk + 28 column chunks
+2025-06-19 18:06:52,526 INFO:[CHUNK CREATION] Processing table: regularfeesmatrixsep24
+2025-06-19 18:06:52,536 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `regularfeesmatrixsep24` LIMIT 3
+2025-06-19 18:06:52,539 INFO:[SAMPLE ROWS] Table `regularfeesmatrixsep24`: Retrieved string result
+2025-06-19 18:06:52,541 INFO:[CHUNK CREATION] Table `regularfeesmatrixsep24`: Created 1 table chunk + 28 column chunks
+2025-06-19 18:06:52,541 INFO:[CHUNK CREATION] Processing table: resource
+2025-06-19 18:06:52,541 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `resource` LIMIT 3
+2025-06-19 18:06:52,541 INFO:[SAMPLE ROWS] Table `resource`: Retrieved string result
+2025-06-19 18:06:52,541 INFO:[CHUNK CREATION] Table `resource`: Created 1 table chunk + 19 column chunks
+2025-06-19 18:06:52,541 INFO:[CHUNK CREATION] Processing table: resourceslot
+2025-06-19 18:06:52,559 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `resourceslot` LIMIT 3
+2025-06-19 18:06:52,559 INFO:[SAMPLE ROWS] Table `resourceslot`: Retrieved string result
+2025-06-19 18:06:52,559 INFO:[CHUNK CREATION] Table `resourceslot`: Created 1 table chunk + 10 column chunks
+2025-06-19 18:06:52,559 INFO:[CHUNK CREATION] Processing table: resourceslotmatrix
+2025-06-19 18:06:52,562 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `resourceslotmatrix` LIMIT 3
+2025-06-19 18:06:52,562 INFO:[SAMPLE ROWS] Table `resourceslotmatrix`: Retrieved string result
+2025-06-19 18:06:52,562 INFO:[CHUNK CREATION] Table `resourceslotmatrix`: Created 1 table chunk + 14 column chunks
+2025-06-19 18:06:52,562 INFO:[CHUNK CREATION] Processing table: role
+2025-06-19 18:06:52,575 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `role` LIMIT 3
+2025-06-19 18:06:52,575 INFO:[SAMPLE ROWS] Table `role`: Retrieved string result
+2025-06-19 18:06:52,575 INFO:[CHUNK CREATION] Table `role`: Created 1 table chunk + 13 column chunks
+2025-06-19 18:06:52,575 INFO:[CHUNK CREATION] Processing table: session_users
+2025-06-19 18:06:52,583 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `session_users` LIMIT 3
+2025-06-19 18:06:52,584 INFO:[SAMPLE ROWS] Table `session_users`: Retrieved string result
+2025-06-19 18:06:52,584 INFO:[CHUNK CREATION] Table `session_users`: Created 1 table chunk + 11 column chunks
+2025-06-19 18:06:52,584 INFO:[CHUNK CREATION] Processing table: sessionbooking
+2025-06-19 18:06:52,594 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `sessionbooking` LIMIT 3
+2025-06-19 18:06:52,597 INFO:[SAMPLE ROWS] Table `sessionbooking`: Retrieved string result
+2025-06-19 18:06:52,597 INFO:[CHUNK CREATION] Table `sessionbooking`: Created 1 table chunk + 23 column chunks
+2025-06-19 18:06:52,597 INFO:[CHUNK CREATION] Processing table: sessionbookingstudents
+2025-06-19 18:06:52,602 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `sessionbookingstudents` LIMIT 3
+2025-06-19 18:06:52,605 INFO:[SAMPLE ROWS] Table `sessionbookingstudents`: Retrieved string result
+2025-06-19 18:06:52,605 INFO:[CHUNK CREATION] Table `sessionbookingstudents`: Created 1 table chunk + 14 column chunks
+2025-06-19 18:06:52,605 INFO:[CHUNK CREATION] Processing table: siblingapr
+2025-06-19 18:06:52,614 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `siblingapr` LIMIT 3
+2025-06-19 18:06:52,614 INFO:[SAMPLE ROWS] Table `siblingapr`: Retrieved string result
+2025-06-19 18:06:52,614 INFO:[CHUNK CREATION] Table `siblingapr`: Created 1 table chunk + 29 column chunks
+2025-06-19 18:06:52,614 INFO:[CHUNK CREATION] Processing table: slot
+2025-06-19 18:06:52,624 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `slot` LIMIT 3
+2025-06-19 18:06:52,624 INFO:[SAMPLE ROWS] Table `slot`: Retrieved string result
+2025-06-19 18:06:52,624 INFO:[CHUNK CREATION] Table `slot`: Created 1 table chunk + 16 column chunks
+2025-06-19 18:06:52,624 INFO:[CHUNK CREATION] Processing table: sms_history
+2025-06-19 18:06:52,634 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `sms_history` LIMIT 3
+2025-06-19 18:06:52,635 INFO:[SAMPLE ROWS] Table `sms_history`: Retrieved string result
+2025-06-19 18:06:52,635 INFO:[CHUNK CREATION] Table `sms_history`: Created 1 table chunk + 13 column chunks
+2025-06-19 18:06:52,635 INFO:[CHUNK CREATION] Processing table: squadselection
+2025-06-19 18:06:52,642 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `squadselection` LIMIT 3
+2025-06-19 18:06:52,642 INFO:[SAMPLE ROWS] Table `squadselection`: Retrieved string result
+2025-06-19 18:06:52,642 INFO:[CHUNK CREATION] Table `squadselection`: Created 1 table chunk + 12 column chunks
+2025-06-19 18:06:52,642 INFO:[CHUNK CREATION] Processing table: squard_batch_details
+2025-06-19 18:06:52,652 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `squard_batch_details` LIMIT 3
+2025-06-19 18:06:52,653 INFO:[SAMPLE ROWS] Table `squard_batch_details`: Retrieved string result
+2025-06-19 18:06:52,653 INFO:[CHUNK CREATION] Table `squard_batch_details`: Created 1 table chunk + 12 column chunks
+2025-06-19 18:06:52,654 INFO:[CHUNK CREATION] Processing table: squard_details
+2025-06-19 18:06:52,657 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `squard_details` LIMIT 3
+2025-06-19 18:06:52,663 INFO:[SAMPLE ROWS] Table `squard_details`: Retrieved string result
+2025-06-19 18:06:52,663 INFO:[CHUNK CREATION] Table `squard_details`: Created 1 table chunk + 12 column chunks
+2025-06-19 18:06:52,663 INFO:[CHUNK CREATION] Processing table: squard_facility
+2025-06-19 18:06:52,668 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `squard_facility` LIMIT 3
+2025-06-19 18:06:52,669 INFO:[SAMPLE ROWS] Table `squard_facility`: Retrieved string result
+2025-06-19 18:06:52,670 INFO:[CHUNK CREATION] Table `squard_facility`: Created 1 table chunk + 12 column chunks
+2025-06-19 18:06:52,670 INFO:[CHUNK CREATION] Processing table: squard_player_details
+2025-06-19 18:06:52,678 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `squard_player_details` LIMIT 3
+2025-06-19 18:06:52,680 INFO:[SAMPLE ROWS] Table `squard_player_details`: Retrieved string result
+2025-06-19 18:06:52,680 INFO:[CHUNK CREATION] Table `squard_player_details`: Created 1 table chunk + 16 column chunks
+2025-06-19 18:06:52,680 INFO:[CHUNK CREATION] Processing table: squard_transition
+2025-06-19 18:06:52,683 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `squard_transition` LIMIT 3
+2025-06-19 18:06:52,687 INFO:[SAMPLE ROWS] Table `squard_transition`: Retrieved string result
+2025-06-19 18:06:52,688 INFO:[CHUNK CREATION] Table `squard_transition`: Created 1 table chunk + 16 column chunks
+2025-06-19 18:06:52,688 INFO:[CHUNK CREATION] Processing table: stu
+2025-06-19 18:06:52,694 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `stu` LIMIT 3
+2025-06-19 18:06:52,696 INFO:[SAMPLE ROWS] Table `stu`: Retrieved string result
+2025-06-19 18:06:52,696 INFO:[CHUNK CREATION] Table `stu`: Created 1 table chunk + 8 column chunks
+2025-06-19 18:06:52,696 INFO:[CHUNK CREATION] Processing table: student
+2025-06-19 18:06:52,702 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `student` LIMIT 3
+2025-06-19 18:06:52,703 INFO:[SAMPLE ROWS] Table `student`: Retrieved string result
+2025-06-19 18:06:52,704 INFO:[CHUNK CREATION] Table `student`: Created 1 table chunk + 12 column chunks
+2025-06-19 18:06:52,704 INFO:[CHUNK CREATION] Processing table: studentcoursemapping
+2025-06-19 18:06:52,712 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `studentcoursemapping` LIMIT 3
+2025-06-19 18:06:52,714 INFO:[SAMPLE ROWS] Table `studentcoursemapping`: Retrieved string result
+2025-06-19 18:06:52,714 INFO:[CHUNK CREATION] Table `studentcoursemapping`: Created 1 table chunk + 14 column chunks
+2025-06-19 18:06:52,714 INFO:[CHUNK CREATION] Processing table: studentphysicalassessment
+2025-06-19 18:06:52,723 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `studentphysicalassessment` LIMIT 3
+2025-06-19 18:06:52,724 INFO:[SAMPLE ROWS] Table `studentphysicalassessment`: Retrieved string result
+2025-06-19 18:06:52,724 INFO:[CHUNK CREATION] Table `studentphysicalassessment`: Created 1 table chunk + 21 column chunks
+2025-06-19 18:06:52,724 INFO:[CHUNK CREATION] Processing table: studentvideo
+2025-06-19 18:06:52,731 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `studentvideo` LIMIT 3
+2025-06-19 18:06:52,731 INFO:[SAMPLE ROWS] Table `studentvideo`: Retrieved string result
+2025-06-19 18:06:52,736 INFO:[CHUNK CREATION] Table `studentvideo`: Created 1 table chunk + 16 column chunks
+2025-06-19 18:06:52,736 INFO:[CHUNK CREATION] Processing table: subresource
+2025-06-19 18:06:52,743 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `subresource` LIMIT 3
+2025-06-19 18:06:52,743 INFO:[SAMPLE ROWS] Table `subresource`: Retrieved string result
+2025-06-19 18:06:52,743 INFO:[CHUNK CREATION] Table `subresource`: Created 1 table chunk + 16 column chunks
+2025-06-19 18:06:52,743 INFO:[CHUNK CREATION] Processing table: t_advertisements
+2025-06-19 18:06:52,755 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `t_advertisements` LIMIT 3
+2025-06-19 18:06:52,757 INFO:[SAMPLE ROWS] Table `t_advertisements`: Retrieved string result
+2025-06-19 18:06:52,757 INFO:[CHUNK CREATION] Table `t_advertisements`: Created 1 table chunk + 31 column chunks
+2025-06-19 18:06:52,757 INFO:[CHUNK CREATION] Processing table: t_advertisements_back
+2025-06-19 18:06:52,758 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `t_advertisements_back` LIMIT 3
+2025-06-19 18:06:52,758 INFO:[SAMPLE ROWS] Table `t_advertisements_back`: Retrieved string result
+2025-06-19 18:06:52,758 INFO:[CHUNK CREATION] Table `t_advertisements_back`: Created 1 table chunk + 21 column chunks
+2025-06-19 18:06:52,758 INFO:[CHUNK CREATION] Processing table: t_alltimexi
+2025-06-19 18:06:52,775 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `t_alltimexi` LIMIT 3
+2025-06-19 18:06:52,775 INFO:[SAMPLE ROWS] Table `t_alltimexi`: Retrieved string result
+2025-06-19 18:06:52,775 INFO:[CHUNK CREATION] Table `t_alltimexi`: Created 1 table chunk + 17 column chunks
+2025-06-19 18:06:52,775 INFO:[CHUNK CREATION] Processing table: t_aqillis_mail_transaction
+2025-06-19 18:06:52,785 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `t_aqillis_mail_transaction` LIMIT 3
+2025-06-19 18:06:52,787 INFO:[SAMPLE ROWS] Table `t_aqillis_mail_transaction`: Retrieved string result
+2025-06-19 18:06:52,787 INFO:[CHUNK CREATION] Table `t_aqillis_mail_transaction`: Created 1 table chunk + 14 column chunks
+2025-06-19 18:06:52,787 INFO:[CHUNK CREATION] Processing table: t_aqillis_transaction
+2025-06-19 18:06:52,791 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `t_aqillis_transaction` LIMIT 3
+2025-06-19 18:06:52,791 INFO:[SAMPLE ROWS] Table `t_aqillis_transaction`: Retrieved string result
+2025-06-19 18:06:52,791 INFO:[CHUNK CREATION] Table `t_aqillis_transaction`: Created 1 table chunk + 20 column chunks
+2025-06-19 18:06:52,791 INFO:[CHUNK CREATION] Processing table: t_auctionselectedplayers
+2025-06-19 18:06:52,803 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `t_auctionselectedplayers` LIMIT 3
+2025-06-19 18:06:52,804 INFO:[SAMPLE ROWS] Table `t_auctionselectedplayers`: Retrieved string result
+2025-06-19 18:06:52,805 INFO:[CHUNK CREATION] Table `t_auctionselectedplayers`: Created 1 table chunk + 13 column chunks
+2025-06-19 18:06:52,805 INFO:[CHUNK CREATION] Processing table: t_blog_comments
+2025-06-19 18:06:52,809 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `t_blog_comments` LIMIT 3
+2025-06-19 18:06:52,809 INFO:[SAMPLE ROWS] Table `t_blog_comments`: Retrieved string result
+2025-06-19 18:06:52,809 INFO:[CHUNK CREATION] Table `t_blog_comments`: Created 1 table chunk + 16 column chunks
+2025-06-19 18:06:52,809 INFO:[CHUNK CREATION] Processing table: t_common_error
+2025-06-19 18:06:52,819 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `t_common_error` LIMIT 3
+2025-06-19 18:06:52,822 INFO:[SAMPLE ROWS] Table `t_common_error`: Retrieved string result
+2025-06-19 18:06:52,822 INFO:[CHUNK CREATION] Table `t_common_error`: Created 1 table chunk + 17 column chunks
+2025-06-19 18:06:52,822 INFO:[CHUNK CREATION] Processing table: t_contest_answers
+2025-06-19 18:06:52,826 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `t_contest_answers` LIMIT 3
+2025-06-19 18:06:52,826 INFO:[SAMPLE ROWS] Table `t_contest_answers`: Retrieved string result
+2025-06-19 18:06:52,826 INFO:[CHUNK CREATION] Table `t_contest_answers`: Created 1 table chunk + 23 column chunks
+2025-06-19 18:06:52,826 INFO:[CHUNK CREATION] Processing table: t_contest_prizes
+2025-06-19 18:06:52,840 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `t_contest_prizes` LIMIT 3
+2025-06-19 18:06:52,842 INFO:[SAMPLE ROWS] Table `t_contest_prizes`: Retrieved string result
+2025-06-19 18:06:52,842 INFO:[CHUNK CREATION] Table `t_contest_prizes`: Created 1 table chunk + 17 column chunks
+2025-06-19 18:06:52,842 INFO:[CHUNK CREATION] Processing table: t_contest_selfie
+2025-06-19 18:06:52,842 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `t_contest_selfie` LIMIT 3
+2025-06-19 18:06:52,842 INFO:[SAMPLE ROWS] Table `t_contest_selfie`: Retrieved string result
+2025-06-19 18:06:52,842 INFO:[CHUNK CREATION] Table `t_contest_selfie`: Created 1 table chunk + 13 column chunks
+2025-06-19 18:06:52,842 INFO:[CHUNK CREATION] Processing table: t_contest_user_answers
+2025-06-19 18:06:52,857 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `t_contest_user_answers` LIMIT 3
+2025-06-19 18:06:52,857 INFO:[SAMPLE ROWS] Table `t_contest_user_answers`: Retrieved string result
+2025-06-19 18:06:52,857 INFO:[CHUNK CREATION] Table `t_contest_user_answers`: Created 1 table chunk + 16 column chunks
+2025-06-19 18:06:52,857 INFO:[CHUNK CREATION] Processing table: t_contest_winners
+2025-06-19 18:06:52,861 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `t_contest_winners` LIMIT 3
+2025-06-19 18:06:52,867 INFO:[SAMPLE ROWS] Table `t_contest_winners`: Retrieved string result
+2025-06-19 18:06:52,867 INFO:[CHUNK CREATION] Table `t_contest_winners`: Created 1 table chunk + 18 column chunks
+2025-06-19 18:06:52,867 INFO:[CHUNK CREATION] Processing table: t_customizable_orders
+2025-06-19 18:06:52,874 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `t_customizable_orders` LIMIT 3
+2025-06-19 18:06:52,874 INFO:[SAMPLE ROWS] Table `t_customizable_orders`: Retrieved string result
+2025-06-19 18:06:52,874 INFO:[CHUNK CREATION] Table `t_customizable_orders`: Created 1 table chunk + 17 column chunks
+2025-06-19 18:06:52,874 INFO:[CHUNK CREATION] Processing table: t_fan_super_squad
+2025-06-19 18:06:52,878 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `t_fan_super_squad` LIMIT 3
+2025-06-19 18:06:52,884 INFO:[SAMPLE ROWS] Table `t_fan_super_squad`: Retrieved string result
+2025-06-19 18:06:52,884 INFO:[CHUNK CREATION] Table `t_fan_super_squad`: Created 1 table chunk + 14 column chunks
+2025-06-19 18:06:52,884 INFO:[CHUNK CREATION] Processing table: t_fantemplateans
+2025-06-19 18:06:52,891 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `t_fantemplateans` LIMIT 3
+2025-06-19 18:06:52,893 INFO:[SAMPLE ROWS] Table `t_fantemplateans`: Retrieved string result
+2025-06-19 18:06:52,893 INFO:[CHUNK CREATION] Table `t_fantemplateans`: Created 1 table chunk + 18 column chunks
+2025-06-19 18:06:52,893 INFO:[CHUNK CREATION] Processing table: t_home_json
+2025-06-19 18:06:52,939 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `t_home_json` LIMIT 3
+2025-06-19 18:06:52,999 INFO:[SAMPLE ROWS] Table `t_home_json`: Retrieved string result
+2025-06-19 18:06:52,999 INFO:[CHUNK CREATION] Table `t_home_json`: Created 1 table chunk + 12 column chunks
+2025-06-19 18:06:52,999 INFO:[CHUNK CREATION] Processing table: t_ipl_players_bid_details
+2025-06-19 18:06:53,005 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `t_ipl_players_bid_details` LIMIT 3
+2025-06-19 18:06:53,006 INFO:[SAMPLE ROWS] Table `t_ipl_players_bid_details`: Retrieved string result
+2025-06-19 18:06:53,007 INFO:[CHUNK CREATION] Table `t_ipl_players_bid_details`: Created 1 table chunk + 15 column chunks
+2025-06-19 18:06:53,007 INFO:[CHUNK CREATION] Processing table: t_ipl_players_final_bid
+2025-06-19 18:06:53,013 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `t_ipl_players_final_bid` LIMIT 3
+2025-06-19 18:06:53,013 INFO:[SAMPLE ROWS] Table `t_ipl_players_final_bid`: Retrieved string result
+2025-06-19 18:06:53,013 INFO:[CHUNK CREATION] Table `t_ipl_players_final_bid`: Created 1 table chunk + 16 column chunks
+2025-06-19 18:06:53,013 INFO:[CHUNK CREATION] Processing table: t_match_user_notification
+2025-06-19 18:06:53,021 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `t_match_user_notification` LIMIT 3
+2025-06-19 18:06:53,022 INFO:[SAMPLE ROWS] Table `t_match_user_notification`: Retrieved string result
+2025-06-19 18:06:53,022 INFO:[CHUNK CREATION] Table `t_match_user_notification`: Created 1 table chunk + 13 column chunks
+2025-06-19 18:06:53,022 INFO:[CHUNK CREATION] Processing table: t_payment_gateway_trans
+2025-06-19 18:06:53,024 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `t_payment_gateway_trans` LIMIT 3
+2025-06-19 18:06:53,024 INFO:[SAMPLE ROWS] Table `t_payment_gateway_trans`: Retrieved string result
+2025-06-19 18:06:53,024 INFO:[CHUNK CREATION] Table `t_payment_gateway_trans`: Created 1 table chunk + 13 column chunks
+2025-06-19 18:06:53,024 INFO:[CHUNK CREATION] Processing table: t_payment_invoice
+2025-06-19 18:06:53,042 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `t_payment_invoice` LIMIT 3
+2025-06-19 18:06:53,042 INFO:[SAMPLE ROWS] Table `t_payment_invoice`: Retrieved string result
+2025-06-19 18:06:53,042 INFO:[CHUNK CREATION] Table `t_payment_invoice`: Created 1 table chunk + 54 column chunks
+2025-06-19 18:06:53,042 INFO:[CHUNK CREATION] Processing table: t_super_retention
+2025-06-19 18:06:53,051 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `t_super_retention` LIMIT 3
+2025-06-19 18:06:53,052 INFO:[SAMPLE ROWS] Table `t_super_retention`: Retrieved string result
+2025-06-19 18:06:53,052 INFO:[CHUNK CREATION] Table `t_super_retention`: Created 1 table chunk + 14 column chunks
+2025-06-19 18:06:53,052 INFO:[CHUNK CREATION] Processing table: t_superfan
+2025-06-19 18:06:53,058 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `t_superfan` LIMIT 3
+2025-06-19 18:06:53,058 INFO:[SAMPLE ROWS] Table `t_superfan`: Retrieved string result
+2025-06-19 18:06:53,058 INFO:[CHUNK CREATION] Table `t_superfan`: Created 1 table chunk + 27 column chunks
+2025-06-19 18:06:53,058 INFO:[CHUNK CREATION] Processing table: t_tssscheduler
+2025-06-19 18:06:53,072 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `t_tssscheduler` LIMIT 3
+2025-06-19 18:06:53,074 INFO:[SAMPLE ROWS] Table `t_tssscheduler`: Retrieved string result
+2025-06-19 18:06:53,074 INFO:[CHUNK CREATION] Table `t_tssscheduler`: Created 1 table chunk + 23 column chunks
+2025-06-19 18:06:53,074 INFO:[CHUNK CREATION] Processing table: t_user_activities
+2025-06-19 18:06:53,077 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `t_user_activities` LIMIT 3
+2025-06-19 18:06:53,077 INFO:[SAMPLE ROWS] Table `t_user_activities`: Retrieved string result
+2025-06-19 18:06:53,077 INFO:[CHUNK CREATION] Table `t_user_activities`: Created 1 table chunk + 17 column chunks
+2025-06-19 18:06:53,077 INFO:[CHUNK CREATION] Processing table: t_user_contest
+2025-06-19 18:06:53,090 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `t_user_contest` LIMIT 3
+2025-06-19 18:06:53,091 INFO:[SAMPLE ROWS] Table `t_user_contest`: Retrieved string result
+2025-06-19 18:06:53,091 INFO:[CHUNK CREATION] Table `t_user_contest`: Created 1 table chunk + 12 column chunks
+2025-06-19 18:06:53,092 INFO:[CHUNK CREATION] Processing table: t_user_home_feed_pref
+2025-06-19 18:06:53,095 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `t_user_home_feed_pref` LIMIT 3
+2025-06-19 18:06:53,095 INFO:[SAMPLE ROWS] Table `t_user_home_feed_pref`: Retrieved string result
+2025-06-19 18:06:53,095 INFO:[CHUNK CREATION] Table `t_user_home_feed_pref`: Created 1 table chunk + 12 column chunks
+2025-06-19 18:06:53,095 INFO:[CHUNK CREATION] Processing table: t_user_logins_log
+2025-06-19 18:06:53,108 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `t_user_logins_log` LIMIT 3
+2025-06-19 18:06:53,108 INFO:[SAMPLE ROWS] Table `t_user_logins_log`: Retrieved string result
+2025-06-19 18:06:53,108 INFO:[CHUNK CREATION] Table `t_user_logins_log`: Created 1 table chunk + 9 column chunks
+2025-06-19 18:06:53,108 INFO:[CHUNK CREATION] Processing table: t_user_predicted_team_list
+2025-06-19 18:06:53,108 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `t_user_predicted_team_list` LIMIT 3
+2025-06-19 18:06:53,108 INFO:[SAMPLE ROWS] Table `t_user_predicted_team_list`: Retrieved string result
+2025-06-19 18:06:53,108 INFO:[CHUNK CREATION] Table `t_user_predicted_team_list`: Created 1 table chunk + 12 column chunks
+2025-06-19 18:06:53,108 INFO:[CHUNK CREATION] Processing table: t_users_eligible_notifications
+2025-06-19 18:06:53,123 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `t_users_eligible_notifications` LIMIT 3
+2025-06-19 18:06:53,123 INFO:[SAMPLE ROWS] Table `t_users_eligible_notifications`: Retrieved string result
+2025-06-19 18:06:53,123 INFO:[CHUNK CREATION] Table `t_users_eligible_notifications`: Created 1 table chunk + 21 column chunks
+2025-06-19 18:06:53,123 INFO:[CHUNK CREATION] Processing table: t_yellovemoments
+2025-06-19 18:06:53,132 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `t_yellovemoments` LIMIT 3
+2025-06-19 18:06:53,133 INFO:[SAMPLE ROWS] Table `t_yellovemoments`: Retrieved string result
+2025-06-19 18:06:53,133 INFO:[CHUNK CREATION] Table `t_yellovemoments`: Created 1 table chunk + 16 column chunks
+2025-06-19 18:06:53,133 INFO:[CHUNK CREATION] Processing table: temp
+2025-06-19 18:06:53,140 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `temp` LIMIT 3
+2025-06-19 18:06:53,142 INFO:[SAMPLE ROWS] Table `temp`: Retrieved string result
+2025-06-19 18:06:53,142 INFO:[CHUNK CREATION] Table `temp`: Created 1 table chunk + 7 column chunks
+2025-06-19 18:06:53,142 INFO:[CHUNK CREATION] Processing table: temp_matrix
+2025-06-19 18:06:53,146 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `temp_matrix` LIMIT 3
+2025-06-19 18:06:53,146 INFO:[SAMPLE ROWS] Table `temp_matrix`: Retrieved string result
+2025-06-19 18:06:53,146 INFO:[CHUNK CREATION] Table `temp_matrix`: Created 1 table chunk + 19 column chunks
+2025-06-19 18:06:53,146 INFO:[CHUNK CREATION] Processing table: terms_and_conditon
+2025-06-19 18:06:53,156 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `terms_and_conditon` LIMIT 3
+2025-06-19 18:06:53,158 INFO:[SAMPLE ROWS] Table `terms_and_conditon`: Retrieved string result
+2025-06-19 18:06:53,158 INFO:[CHUNK CREATION] Table `terms_and_conditon`: Created 1 table chunk + 7 column chunks
+2025-06-19 18:06:53,158 INFO:[CHUNK CREATION] Processing table: tmp_matrix2
+2025-06-19 18:06:53,158 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `tmp_matrix2` LIMIT 3
+2025-06-19 18:06:53,158 INFO:[SAMPLE ROWS] Table `tmp_matrix2`: Retrieved string result
+2025-06-19 18:06:53,158 INFO:[CHUNK CREATION] Table `tmp_matrix2`: Created 1 table chunk + 28 column chunks
+2025-06-19 18:06:53,158 INFO:[CHUNK CREATION] Processing table: tmp_ph_no
+2025-06-19 18:06:53,175 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `tmp_ph_no` LIMIT 3
+2025-06-19 18:06:53,175 INFO:[SAMPLE ROWS] Table `tmp_ph_no`: Retrieved string result
+2025-06-19 18:06:53,175 INFO:[CHUNK CREATION] Table `tmp_ph_no`: Created 1 table chunk + 6 column chunks
+2025-06-19 18:06:53,175 INFO:[CHUNK CREATION] Processing table: tmp_users
+2025-06-19 18:06:53,181 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `tmp_users` LIMIT 3
+2025-06-19 18:06:53,182 INFO:[SAMPLE ROWS] Table `tmp_users`: Retrieved string result
+2025-06-19 18:06:53,183 INFO:[CHUNK CREATION] Table `tmp_users`: Created 1 table chunk + 7 column chunks
+2025-06-19 18:06:53,183 INFO:[CHUNK CREATION] Processing table: tt2
+2025-06-19 18:06:53,188 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `tt2` LIMIT 3
+2025-06-19 18:06:53,191 INFO:[SAMPLE ROWS] Table `tt2`: Retrieved string result
+2025-06-19 18:06:53,192 INFO:[CHUNK CREATION] Table `tt2`: Created 1 table chunk + 9 column chunks
+2025-06-19 18:06:53,192 INFO:[CHUNK CREATION] Processing table: tt3
+2025-06-19 18:06:53,196 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `tt3` LIMIT 3
+2025-06-19 18:06:53,198 INFO:[SAMPLE ROWS] Table `tt3`: Retrieved string result
+2025-06-19 18:06:53,198 INFO:[CHUNK CREATION] Table `tt3`: Created 1 table chunk + 9 column chunks
+2025-06-19 18:06:53,198 INFO:[CHUNK CREATION] Processing table: tt4
+2025-06-19 18:06:53,203 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `tt4` LIMIT 3
+2025-06-19 18:06:53,205 INFO:[SAMPLE ROWS] Table `tt4`: Retrieved string result
+2025-06-19 18:06:53,205 INFO:[CHUNK CREATION] Table `tt4`: Created 1 table chunk + 9 column chunks
+2025-06-19 18:06:53,205 INFO:[CHUNK CREATION] Processing table: user
+2025-06-19 18:06:53,206 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `user` LIMIT 3
+2025-06-19 18:06:53,206 INFO:[SAMPLE ROWS] Table `user`: Retrieved string result
+2025-06-19 18:06:53,206 INFO:[CHUNK CREATION] Table `user`: Created 1 table chunk + 6 column chunks
+2025-06-19 18:06:53,206 INFO:[CHUNK CREATION] Processing table: user_notification_preferences
+2025-06-19 18:06:53,218 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `user_notification_preferences` LIMIT 3
+2025-06-19 18:06:53,220 INFO:[SAMPLE ROWS] Table `user_notification_preferences`: Retrieved string result
+2025-06-19 18:06:53,220 INFO:[CHUNK CREATION] Table `user_notification_preferences`: Created 1 table chunk + 13 column chunks
+2025-06-19 18:06:53,220 INFO:[CHUNK CREATION] Processing table: vendorrequest
+2025-06-19 18:06:53,223 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `vendorrequest` LIMIT 3
+2025-06-19 18:06:53,223 INFO:[SAMPLE ROWS] Table `vendorrequest`: Retrieved string result
+2025-06-19 18:06:53,223 INFO:[CHUNK CREATION] Table `vendorrequest`: Created 1 table chunk + 27 column chunks
+2025-06-19 18:06:53,223 INFO:[CHUNK CREATION] Processing table: workingtab
+2025-06-19 18:06:53,237 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `workingtab` LIMIT 3
+2025-06-19 18:06:53,240 INFO:[SAMPLE ROWS] Table `workingtab`: Retrieved string result
+2025-06-19 18:06:53,240 INFO:[CHUNK CREATION] Table `workingtab`: Created 1 table chunk + 16 column chunks
+2025-06-19 18:06:53,240 INFO:[CHUNK CREATION] Processing table: xl_mapping
+2025-06-19 18:06:53,242 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `xl_mapping` LIMIT 3
+2025-06-19 18:06:53,242 INFO:[SAMPLE ROWS] Table `xl_mapping`: Retrieved string result
+2025-06-19 18:06:53,242 INFO:[CHUNK CREATION] Table `xl_mapping`: Created 1 table chunk + 10 column chunks
+2025-06-19 18:06:53,242 INFO:[CHUNK CREATION] Processing table: xl_upload
+2025-06-19 18:06:53,253 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `xl_upload` LIMIT 3
+2025-06-19 18:06:53,255 INFO:[SAMPLE ROWS] Table `xl_upload`: Retrieved string result
+2025-06-19 18:06:53,255 INFO:[CHUNK CREATION] Table `xl_upload`: Created 1 table chunk + 11 column chunks
+2025-06-19 18:06:53,255 INFO:[CHUNK CREATION] Processing table: zerofeesstudents
+2025-06-19 18:06:53,256 INFO:[SAMPLE ROWS] Executing query: SELECT * FROM `zerofeesstudents` LIMIT 3
+2025-06-19 18:06:53,256 INFO:[SAMPLE ROWS] Table `zerofeesstudents`: Retrieved string result
+2025-06-19 18:06:53,256 INFO:[CHUNK CREATION] Table `zerofeesstudents`: Created 1 table chunk + 28 column chunks
+2025-06-19 18:06:53,256 INFO:[CHUNK CREATION] Total chunks created: 6774
+2025-06-19 18:06:53,270 INFO:[CHUNK STATS] table_complete: 339
+2025-06-19 18:06:53,271 INFO:[CHUNK STATS] column_info: 6435
+2025-06-19 18:06:53,278 INFO:[SAMPLE CHUNK] Type: table_complete, Table: academy
+2025-06-19 18:06:53,278 INFO:[SAMPLE CHUNK] Content length: 2798 characters
+2025-06-19 18:06:59,830 INFO:[EMBEDDING BATCH] Added batch 1/68 with 100 documents
+2025-06-19 18:07:04,965 INFO:[EMBEDDING BATCH] Added batch 2/68 with 100 documents
+2025-06-19 18:07:12,932 INFO:[EMBEDDING BATCH] Added batch 3/68 with 100 documents
+2025-06-19 18:07:20,034 INFO:[EMBEDDING BATCH] Added batch 4/68 with 100 documents
+2025-06-19 18:07:26,254 INFO:[EMBEDDING BATCH] Added batch 5/68 with 100 documents
+2025-06-19 18:07:31,609 INFO:[EMBEDDING BATCH] Added batch 6/68 with 100 documents
+2025-06-19 18:07:38,453 INFO:[EMBEDDING BATCH] Added batch 7/68 with 100 documents
+2025-06-19 18:07:45,001 INFO:[EMBEDDING BATCH] Added batch 8/68 with 100 documents
+2025-06-19 18:07:52,268 INFO:[EMBEDDING BATCH] Added batch 9/68 with 100 documents
+2025-06-19 18:07:59,057 INFO:[EMBEDDING BATCH] Added batch 10/68 with 100 documents
+2025-06-19 18:08:04,168 INFO:[EMBEDDING BATCH] Added batch 11/68 with 100 documents
+2025-06-19 18:08:10,234 INFO:[EMBEDDING BATCH] Added batch 12/68 with 100 documents
+2025-06-19 18:08:16,690 INFO:[EMBEDDING BATCH] Added batch 13/68 with 100 documents
+2025-06-19 18:08:22,843 INFO:[EMBEDDING BATCH] Added batch 14/68 with 100 documents
+2025-06-19 18:08:28,796 INFO:[EMBEDDING BATCH] Added batch 15/68 with 100 documents
+2025-06-19 18:08:34,517 INFO:[EMBEDDING BATCH] Added batch 16/68 with 100 documents
+2025-06-19 18:08:41,261 INFO:[EMBEDDING BATCH] Added batch 17/68 with 100 documents
+2025-06-19 18:08:50,436 INFO:[EMBEDDING BATCH] Added batch 18/68 with 100 documents
+2025-06-19 18:08:56,879 INFO:[EMBEDDING BATCH] Added batch 19/68 with 100 documents
+2025-06-19 18:09:03,355 INFO:[EMBEDDING BATCH] Added batch 20/68 with 100 documents
+2025-06-19 18:09:10,292 INFO:[EMBEDDING BATCH] Added batch 21/68 with 100 documents
+2025-06-19 18:09:16,179 INFO:[EMBEDDING BATCH] Added batch 22/68 with 100 documents
+2025-06-19 18:09:22,699 INFO:[EMBEDDING BATCH] Added batch 23/68 with 100 documents
+2025-06-19 18:09:28,121 INFO:[EMBEDDING BATCH] Added batch 24/68 with 100 documents
+2025-06-19 18:09:33,309 INFO:[EMBEDDING BATCH] Added batch 25/68 with 100 documents
+2025-06-19 18:09:41,349 INFO:[EMBEDDING BATCH] Added batch 26/68 with 100 documents
+2025-06-19 18:09:48,304 INFO:[EMBEDDING BATCH] Added batch 27/68 with 100 documents
+2025-06-19 18:09:54,274 INFO:[EMBEDDING BATCH] Added batch 28/68 with 100 documents
+2025-06-19 18:10:00,313 INFO:[EMBEDDING BATCH] Added batch 29/68 with 100 documents
+2025-06-19 18:10:06,626 INFO:[EMBEDDING BATCH] Added batch 30/68 with 100 documents
+2025-06-19 18:10:12,375 INFO:[EMBEDDING BATCH] Added batch 31/68 with 100 documents
+2025-06-19 18:10:18,502 INFO:[EMBEDDING BATCH] Added batch 32/68 with 100 documents
+2025-06-19 18:10:28,933 INFO:[EMBEDDING BATCH] Added batch 33/68 with 100 documents
+2025-06-19 18:10:36,030 INFO:[EMBEDDING BATCH] Added batch 34/68 with 100 documents
+2025-06-19 18:10:41,754 INFO:[EMBEDDING BATCH] Added batch 35/68 with 100 documents
+2025-06-19 18:10:47,455 INFO:[EMBEDDING BATCH] Added batch 36/68 with 100 documents
+2025-06-19 18:10:53,265 INFO:[EMBEDDING BATCH] Added batch 37/68 with 100 documents
+2025-06-19 18:10:58,859 INFO:[EMBEDDING BATCH] Added batch 38/68 with 100 documents
+2025-06-19 18:11:04,373 INFO:[EMBEDDING BATCH] Added batch 39/68 with 100 documents
+2025-06-19 18:11:09,886 INFO:[EMBEDDING BATCH] Added batch 40/68 with 100 documents
+2025-06-19 18:11:15,396 INFO:[EMBEDDING BATCH] Added batch 41/68 with 100 documents
+2025-06-19 18:11:21,331 INFO:[EMBEDDING BATCH] Added batch 42/68 with 100 documents
+2025-06-19 18:11:26,945 INFO:[EMBEDDING BATCH] Added batch 43/68 with 100 documents
+2025-06-19 18:11:32,845 INFO:[EMBEDDING BATCH] Added batch 44/68 with 100 documents
+2025-06-19 18:11:38,384 INFO:[EMBEDDING BATCH] Added batch 45/68 with 100 documents
+2025-06-19 18:11:43,905 INFO:[EMBEDDING BATCH] Added batch 46/68 with 100 documents
+2025-06-19 18:11:49,222 INFO:[EMBEDDING BATCH] Added batch 47/68 with 100 documents
+2025-06-19 18:11:54,825 INFO:[EMBEDDING BATCH] Added batch 48/68 with 100 documents
+2025-06-19 18:12:00,360 INFO:[EMBEDDING BATCH] Added batch 49/68 with 100 documents
+2025-06-19 18:12:05,876 INFO:[EMBEDDING BATCH] Added batch 50/68 with 100 documents
+2025-06-19 18:12:11,280 INFO:[EMBEDDING BATCH] Added batch 51/68 with 100 documents
+2025-06-19 18:12:17,135 INFO:[EMBEDDING BATCH] Added batch 52/68 with 100 documents
+2025-06-19 18:12:23,048 INFO:[EMBEDDING BATCH] Added batch 53/68 with 100 documents
+2025-06-19 18:12:28,676 INFO:[EMBEDDING BATCH] Added batch 54/68 with 100 documents
+2025-06-19 18:12:34,538 INFO:[EMBEDDING BATCH] Added batch 55/68 with 100 documents
+2025-06-19 18:12:40,003 INFO:[EMBEDDING BATCH] Added batch 56/68 with 100 documents
+2025-06-19 18:12:46,004 INFO:[EMBEDDING BATCH] Added batch 57/68 with 100 documents
+2025-06-19 18:12:52,015 INFO:[EMBEDDING BATCH] Added batch 58/68 with 100 documents
+2025-06-19 18:12:58,140 INFO:[EMBEDDING BATCH] Added batch 59/68 with 100 documents
+2025-06-19 18:13:04,084 INFO:[EMBEDDING BATCH] Added batch 60/68 with 100 documents
+2025-06-19 18:13:09,576 INFO:[EMBEDDING BATCH] Added batch 61/68 with 100 documents
+2025-06-19 18:13:15,394 INFO:[EMBEDDING BATCH] Added batch 62/68 with 100 documents
+2025-06-19 18:13:21,637 INFO:[EMBEDDING BATCH] Added batch 63/68 with 100 documents
+2025-06-19 18:13:27,751 INFO:[EMBEDDING BATCH] Added batch 64/68 with 100 documents
+2025-06-19 18:13:33,911 INFO:[EMBEDDING BATCH] Added batch 65/68 with 100 documents
+2025-06-19 18:13:40,681 INFO:[EMBEDDING BATCH] Added batch 66/68 with 100 documents
+2025-06-19 18:13:47,207 INFO:[EMBEDDING BATCH] Added batch 67/68 with 100 documents
+2025-06-19 18:13:53,214 INFO:[EMBEDDING BATCH] Added batch 68/68 with 74 documents
+2025-06-19 18:13:53,214 INFO:[EMBEDDING STEP] Successfully added 6774 docs to ChromaDB
+2025-06-20 09:30:56,885 INFO:Backing off send_request(...) for 0.3s (requests.exceptions.ConnectionError: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Max retries exceeded with url: /batch/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000029ED0E6D580>: Failed to resolve 'us.i.posthog.com' ([Errno 11001] getaddrinfo failed)")))
+2025-06-20 09:30:57,198 INFO:Backing off send_request(...) for 1.9s (requests.exceptions.ConnectionError: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Max retries exceeded with url: /batch/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000029ED065AAE0>: Failed to resolve 'us.i.posthog.com' ([Errno 11001] getaddrinfo failed)")))
+2025-06-20 09:30:59,169 INFO:Backing off send_request(...) for 1.2s (requests.exceptions.ConnectionError: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Max retries exceeded with url: /batch/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000029ED065A1B0>: Failed to resolve 'us.i.posthog.com' ([Errno 11001] getaddrinfo failed)")))
+2025-06-20 09:31:00,356 ERROR:Giving up send_request(...) after 4 tries (requests.exceptions.ConnectionError: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Max retries exceeded with url: /batch/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000029ED0658FB0>: Failed to resolve 'us.i.posthog.com' ([Errno 11001] getaddrinfo failed)")))
+2025-06-20 09:35:22,606 INFO:[EMBEDDING CHECK] Existing documents in collection: 6774
+2025-06-20 09:35:22,606 INFO:[EMBEDDING STEP] Using existing embeddings
+2025-06-20 09:40:35,888 ERROR:[ANSWER ERROR] 'tuple' object has no attribute 'items'
