@@ -68,7 +68,7 @@ class QueryResponse(BaseModel):
 # -------------------------------
 # Configuration
 # -------------------------------
-EXCEL_PATH = "KDB.xlsx"
+EXCEL_PATH = "SKDB.xlsx"
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "AIzaSyCUrCxWznBHeuZUmt4HUBqUAzsAdN1bwr0")
 
 SYSTEM_PROMPT_TEMPLATE = """
