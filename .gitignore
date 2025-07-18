@@ -36,7 +36,6 @@ __pycache__/
 backend/*.log
 backend/__pycache__/
 backend/venv/
-backend/KDB.xlsx
 
 # Frontend
 frontend/node_modules/
